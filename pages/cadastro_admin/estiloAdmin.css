@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+.box-central{
+    padding: 1em 2em;
+}
+
+.box-cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-info-admin{
+    margin-top: 1em;
+    width: 50%;
+}
+
+.card-info-admin img{
+    width: 100%;
+}
+
+.card-form-admin{
+    margin-top: 1em;
+    width: 50%;
+    background-color: white;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+.card-form-admin h3{
+    text-align: center;
+    color: black;
+    font-weight: normal;
+    margin-top: 1em;
+}
+
+.card-form-admin form label{
+    display: block;
+    color: black;
+    margin-top: 1em;
+}
+
+.form-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.box-form-line{
+    width: 100%;
+}
+
+.input{
+    height: 33px;
+    color: black;
+    width: 100%;
+}
+
+.input-line{
+    width: 95%;
+    margin-left: 5%;
+}
+
+.label-line{
+    margin-left: 5%;
+}
+
+.input-line-tall{
+    height: 33px;
+    color: black;
+    width: 140%;
+}
+
+.label-line-small{
+    margin-left: 50%;
+}
+
+.input-line-small{
+    width: 50%;
+    margin-left: 50%;
+}
+
+
+
+.sobre-submit{
+    background-color: #000000;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 2%;
+    float: right;
+    margin-top: 13em;
+    border-top-left-radius: 50px;
+    color: #ffffff;
+}
+.clear{
+    clear: both;
+}
+
+
+
+
+@media screen and (min-width: 1351px){
+    .card-sobre-admin{
+        margin-top: 2em;
+        padding: 0 2em;
+        padding-top: 3em;
+    }
+
+    #input{
+        margin-bottom: 2em !important;
+    }
+
+    .box-form-sobre{
+        margin-bottom: 1.5em !important;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    main section{
+        font-size: 16px;
+    }
+
+    .card-info-admin {
+        margin: auto;
+        margin-top: 1em;
+        width: 50%; 
+    }
+
+    .card-form-admin {
+        margin: auto;
+        margin-top: 1em;
+        width: 62%; 
+    }
+
+    #input{
+        margin-bottom: 2em !important;
+    }
+
+    .box-form-sobre{
+        margin-bottom: 1.5em !important;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .card-form-admin{
+        margin: auto;
+        margin-top: 1em;
+        width: 100%;
+    }
+}

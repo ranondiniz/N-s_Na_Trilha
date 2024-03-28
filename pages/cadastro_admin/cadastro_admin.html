@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Admin - Nós na Trilha</title>
+    <link rel="stylesheet" href="estiloAdmin.css">
+    <link rel="stylesheet" href="../../components/every_pages.css">
+  <!-- Importação dos arquivos CSS do Slick carousel -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<header>
+        <nav class="nav_header">
+            <span id="central_colab" class="nav_item">Central de Colaboradores</span>
+            <span>Parcerias</span>
+            <div class="div_busca">
+                <input type="text" id="txt_busca">
+                <img src="images/lupa_search.svg" class="btn_busca" alt="Buscar">
+            </div>
+            <span id="login" class="nav_item">Login</span>
+            <span>Cadastre-se</span>
+        </nav>
+        <nav class="nav_header_2">
+            <div>
+                <img src="../../components/images/logo_principal.svg" alt="Logo da Nós na Trilha" class="logo_principal">
+            </div>
+            <div class="opcoes_nav">
+                <li>HOME</li>
+                <li>ROTEIROS</li>
+                <li>FEED</li>
+                <li>NOSSA HISTÓRIA</li>
+                <li>CONTATO</li>
+            </div>
+            <div class="icons_nav">
+                <img src="../../components/images/perfil.svg" alt="Perfil" id="img_perfil">
+                <img src="../../components/images/notificacoes.svg" alt="Notificações" id="img_sino">
+                <img src="../../components/images/carrinho.svg" alt="Carrinho de Compras" id="img_cart">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    	<section class="box-central">
+    		<div class="info-breadcrumbs">
+                <span class="breadcrumbs">Home |<span> Cadastre-se</span></span>
+            </div>
+            
+    		<div class="box-cards">
+    			<div class="card-info-admin">
+	    			<img src="images/banner_admin.png">
+	    		</div>
+	    		
+	    		<div class="card-form-admin">
+	    			<h3>Cadastro do Admin</h3>
+	    			<form class="form">
+	    				<div class="form-line">
+	    					<div class="box-form-line">
+	    						<label >Nome</label>
+	    						<input class="input" type="text" name="">
+	    					</div>
+	    					<div class="box-form-line">
+	    						<label class="label-line">Sobrenome</label>
+	    						<input class="input-line input" type="text" name="">
+	    					</div>
+	    				</div>
+	    				<label>E-mail</label>
+	    				<input class="input" type="email" name="">
+
+	    				<label>Número de telefone</label>
+	    				<input class="input" type="text" name="">
+
+	    				<label>Senha</label>
+	    				<input class="input" type="password" name="">
+
+	    				<label>Confirmar senha</label>
+	    				<input class="input" type="password" name="">
+
+	    				<div class="form-line">
+	    					<div class="box-form-line">
+	    						<label>Endereço</label>
+	    						<input class="input-line-tall input" type="text" name="">
+	    					</div>
+	    					<div class="box-form-line">
+	    						<label class="label-line-small">CEP</label>
+	    						<input class="input-line-small input" type="text" name="">
+	    					</div>
+	    				</div>
+	    			</form>
+	    			
+		    		<input class="sobre-submit" type="submit" name="" value="Cadastrar">
+		    		<div class="clear"></div>
+	    		</div>
+    		</div>
+    	</section>
+
+        <!--INICIO MODAL PARA TODAS AS TELAS-->
+
+        <section class="fundo-modal admin-modal">
+            <div class="modal admin">
+                <span class="legenda">Home | Login</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>LOGIN - USUÁRIO</h3>
+                    <br>
+                    <span class="text-modal">Bem Vindo de Volta!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/button-google.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Senha">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">Esqueceu a senha?</span>
+                            <span class="text-gray">Precisa de ajuda?</span>
+                        </div>
+
+                        <input onclick="test2()" id="link2" type="button" name="" value="Entrar">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="fundo-modal  colaborador-modal">
+            <div class="modal colaborador">
+                <span class="legenda">Home | Central de Colaboradores | Login</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>LOGIN - COLABORADOR</h3>
+                    <br>
+                    <span class="text-modal">Bem Vindo de Volta!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/button-google.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Senha">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">Esqueceu a senha?</span>
+                            <span class="text-gray">Precisa de ajuda?</span>
+                        </div>
+
+                        <input onclick="test();" id="link" type="button" name="" value="Entrar">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--FIM MODAL PARA TODAS AS TELAS-->
+        
+    	<footer>
+            <div>ENTRE EM CONTATO PARA MAIS INFORMAÇÕES</div>
+            <section>
+                <div class="left margin_top">
+                    <div>
+                        <div>Rua das Colhetas, 258-A, Apipucos</div>
+                        <div>Recife, PE - Brasil</div>
+                        <div>CEP: 10254-330</div>
+                        <div class="margin_top">NÓS NA TRILHA PASSEIOS LTDA</div>
+                        <div>08.591.212/0004-07</div>
+                    </div>
+                </div>
+                <div class="right margin_top">
+                    <div>Encontre-nos nas redes sociais</div>
+                    <div>
+                        <img src="../../components/images/facebook.svg">
+                        <img src="../../components/images/instagram.svg">
+                        <img src="../../components/images/whatsapp.svg">
+                    </div>
+                    <div>
+                        <img src="../../components/images/pinterest.svg">
+                        <img src="../../components/images/twitter.svg">
+                        <img src="../../components/images/youtube.svg">
+                    </div>
+                    <div>contato@nosnatrilha.com.br</div>
+                </div>
+            </section>
+        </footer>
+    </main>
+    <script type="text/javascript" src="../../components/script.js"></script>
+</body>
+</html>
