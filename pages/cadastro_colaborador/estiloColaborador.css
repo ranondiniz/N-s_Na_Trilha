@@ -1,0 +1,223 @@
+.box-central{
+    padding: 1em 2em;
+}
+
+.box-cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.texto-cep{
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+}
+
+.input-container{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #999; 
+}
+
+#caixaDeTexto:focus + .placeholder {
+    display: none;
+}
+
+.barra-pesquisa {
+    display: flex;
+    width: 50%;
+}
+
+header {
+    background-color: #3E4533; /* Define a cor de fundo do cabeçalho */
+    color: #ffffff; /* Define a cor do texto dentro do cabeçalho */
+    padding: 20px; /* Adiciona um preenchimento ao redor do conteúdo dentro do cabeçalho */
+  }
+
+body {
+    background-color: #f8ece4; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.banner img {
+    width: 75%; 
+    height: auto; 
+}
+
+.card-form-vendedor{
+    margin-top: 1em;
+    width: 35%;
+    background-color: #ffffff; 
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+.card-form-vendedor h3{
+    text-align: center;
+    color: black;
+    font-weight: normal;
+    margin-top: 1em;
+}
+
+.card-form-vendedor form label{
+    display: block;
+    color: black;
+    margin-top: 1em;
+}
+
+.form-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.box-form-line{
+    width: 100%;
+}
+
+.input{
+    height: 33px;
+    color: black;
+    width: 100%;
+}
+
+.input-line{
+    width: 95%;
+    margin-left: 5%;
+}
+
+.label-line{
+    margin-left: 5%;
+}
+
+.input-line-tall{
+    height: 33px;
+    color: black;
+    width: 140%;
+}
+
+.label-line-small{
+    margin-left: 50%;
+}
+
+.input-line-small{
+    width: 50%;
+    margin-left: 50%;
+}
+
+.card-sobre-vendedor{
+    padding: 0 2em;
+    padding-top: 3em;
+}
+
+.card-sobre-vendedor h3{
+    color: #859479;
+    text-align: left;
+
+}
+
+.box-form-sobre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.radio{
+    margin: 4% 1% 0 5%;
+}
+.left{
+    margin-left: 0%;
+}
+
+.box-form-sobre-radio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.form-sobre p{
+    color: black;
+    font-size: 12px;
+    margin-top: 1%;
+}
+
+.form-sobre span{
+    color: black;
+}
+
+.sobre-submit{
+    background-color: #0F270F;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 2%;
+    float: right;
+    border-top-left-radius: 50px;
+    
+}
+.clear{
+    clear: both;
+}
+
+@media screen and (min-width: 1351px){
+    main section {
+        font-size: 21px;
+    }
+    .card-sobre-vendedor{
+        margin-top: 2em;
+        padding: 0 2em;
+        padding-top: 3em;
+    }
+    #input{
+        margin-bottom: 2em !important;
+    }
+
+    .box-form-sobre{
+        margin-bottom: 1.5em !important;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    main section{
+        font-size: 16px;
+    }
+
+    .card-info-vendedor{
+        display: none;
+    }
+
+    .card-form-vendedor{
+        margin: auto;
+        margin-top: 1em;
+        width: 80%;
+    }
+    #input{
+        margin-bottom: 2em !important;
+    }
+
+    .box-form-sobre{
+        margin-bottom: 1.5em !important;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .card-form-vendedor{
+        margin: auto;
+        margin-top: 1em;
+        width: 100%;
+    }
+}

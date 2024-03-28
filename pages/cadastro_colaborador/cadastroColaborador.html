@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Parceiro - Nós na trilha</title>
+    <link rel="stylesheet" href="estiloColaborador.css">
+    <link rel="stylesheet" href="everypages.css">
+    
+  <!-- Importação dos arquivos CSS do Slick carousel -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+  <!-- Importação do jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <link rel="shortcut icon" href="../../components/images/favicon-2.png" type="image/x-icon">
+
+</head>
+<body>
+	<header id="box-principal">
+        <div class="header-top">
+            <nav class="botoes-vendedor">
+                <span class="Central-vendedor buttons">Central do Parceiro</span>
+                <span class="buttons" style="color: #0F270F"><a href="../cadastro_vendedor/cadastroVendedor.html">Torne-se Parceiro</a></span>
+            </nav>
+            <div class="barra-pesquisa">
+                <img src="images/icon-search.png" alt="">
+                <input 
+                type="search" 
+                name="pesquisar" 
+                id="input-pesquisa"
+                placeholder="Buscar..." onclick="this.placeholder=''">
+            </div>
+            <nav class="botoes-entrar-cadastrar">
+                <span class="buttons"><a href="../cadastro_cliente/cadastroCliente.html">Cadastre-se</a></span>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <a href="../home/index.html">
+                <img id="logo" src="images/logo_nnt.png" alt="Logo da Nós na trilha">
+            </a>
+            <nav>
+                <span class="buttons"><a href="../home/index.html">HOME</a></span>
+                <span class="buttons"><a href="../produtos/produtos.html">PRODUTOS</a></span>
+                <span class="buttons"><a href="../catalogos/catalogos.html">CATÁLOGOS</a></span>
+                <span class="buttons"><a href="../nossa_historia/nossaHistoria.html">NOSSA HISTÓRIA</a></span>
+                <span class="buttons"><a href="../contato/contato.html">CONTATO</a></span>
+            </nav>
+            <div>
+                <img class="icon-header entrar" src="images/perfil.svg" alt="Ícone de pessoa">
+                <img class="icon-header" src="images/notificacoes.svg" alt="ícone de sino">
+                <a href="../carrinho_compras/carrinhoCompras.html">
+                    <img class="icon-header" src="images/carrinho.svg" alt="Ícone de carrinho">
+                </a>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <!--  Este header só será ativado quando as páginas estiverem no modo responsivo! -->
+    <main>
+    	<section class="box-central">
+            <div class="info-breadcrumbs">
+                <span class="breadcrumbs">Home |<span> Torne-se Parceiro</span></span>
+            </div>
+    		<div class="box-cards">
+    			<div class="banner">
+	    			<img src="images/banner_seja_parceiro.png">
+	    		</div>
+	    		<div class="card-form-vendedor">
+	    			<h3>Cadastro do Parceiro</h3>
+	    			<form class="form">
+	    				<div class="form-line">
+	    					<div class="box-form-line">
+	    						<label >Nome Completo</label>
+	    						<input class="input" type="text" name="">
+	    					</div>
+	    					<div class="box-form-line">
+	    						<label class="label-line">Telefone</label>
+	    						<input class="input-line input" type="text" name="">
+	    					</div>
+	    				</div>
+	    				<label>Nome/Razão Social da empresa</label>
+	    				<input class="input" type="email" name="">
+
+                        <label>Endereço</label>
+	    				<div class="input-container">
+                            <input type="text" id="caixaDeTexto" class="texto-cep" placeholder="CEP" />
+                            <input type="text" id="caixaDeTexto" class="texto-cep" placeholder="Rua" />
+	    				    <input type="text" id="caixaDeTexto" class="texto-cep" placeholder="Bairro" />
+                            <input type="text" id="caixaDeTexto" class="texto-cep" placeholder="Número da fachada" />
+                            <input type="text" id="caixaDeTexto" class="texto-cep" placeholder="Cidade" />
+                            <input type="text" id="caixaDeTexto" class="texto-cep" placeholder="Estado" />
+                        </div>
+	    			</form>
+
+	    			<div class="card-sobre-vendedor">
+		    			<h3>Sobre sua Empresa</h3>
+		    			<form class="form-sobre">
+		    				<label>CNPJ / MEI</label>
+	    					<input id="input" class="input" type="text" name="">
+	    					
+	    					<span>Qual o porte da sua empresa?</span>
+	    					<div class="box-form-sobre">
+	    						<form>
+                                    <select name "tamanhoEmpresa">
+                                        <option name "Micro">Micro</option>
+                                        <option name "Pequeno">Pequeno</option>
+                                        <option name "Médio">Médio</option>
+                                        <option name "Grande">Grande</option>
+                                    </select>
+                                </form>
+		    				</div>
+		    				<br>
+	    					<span>Qual/Quais tipo(s) de serviço sua empresa oferece?</span>
+	    					<div class="box-form-sobre">
+	    						<input id="input" class="input" type="text" name="">
+		    				</div>
+	    					<br>
+	    					<span>Escolha seu plano de assinatura</span>
+	    					<div>
+	    						<form>
+                                    <select name "assinatura">
+                                        <option name "Simples">Simples</option>
+                                        <option name "Silver">Silver</option>
+                                        <option name "Gold">Gold</option>
+                                    </select>
+                                </form>
+		    				</div>
+		    				<p>*Informações sobre os planos</p>
+                            <p>Plano Simples: R$20,00</p>
+                            <p>Plano Silver: R$50,00</p>
+                            <p>Plano Gold: R$100,00</p>
+		    			</form>
+                        <label>Senha</label>
+	    				<input class="input" type="password" name="">
+
+	    				<label>Confirmar senha</label>
+	    				<input class="input" type="password" name="">
+		    		</div>
+		    		<input class="sobre-submit" type="submit" name="" value="Cadastrar">
+		    		<div class="clear"></div><!-- Limpeza da fltuação -->
+	    		</div>
+    		</div>
+    	</section>
+
+       <!--INICIO MODAL PARA TODAS AS TELAS-->
+
+       <section class="fundo-modal cliente-modal">
+        <div class="modal cliente">
+            <span class="legenda">Home | Entrar</span>
+            <div class="box-modal">
+                <img class="img-fechar" src="images/fechar.png">
+                <div class="clear"></div><!-- Limpeza da flutuação -->
+                <h3>LOGIN</h3>
+                <br>
+                <span class="text-modal">Bem vindo de volta ao nosso Jardim!</span>
+                <br>
+                <img class="img-google" src="images/button-google.png">
+                <form>
+                    <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                    <br>
+                    <input class="input-login" type="password" name="" placeholder="Senha">
+
+                    <div class="link-ajuda">
+                        <span class="text-red">Esqueceu a senha?</span>
+                        <span class="text-gray">Precisa de ajuda?</span>
+                    </div>
+
+                    <input onclick="test2()" id="link2" type="button" name="" value="Entrar">
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="fundo-modal  vendedor-modal">
+        <div class="modal vendedor">
+            <span class="legenda">Home | Central do Parceiro | Login</span>
+            <div class="box-modal">
+                <img class="img-fechar" src="images/fechar.png">
+                <div class="clear"></div><!-- Limpeza da flutuação -->
+                <h3>LOGIN DO PARCEIRO</h3>
+                <br>
+                <span class="text-modal">Bem vindo de volta ao nosso Jardim!</span>
+                <br>
+                <img class="img-google" src="images/button-google.png">
+                <form>
+                    <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                    <br>
+                    <input class="input-login" type="password" name="" placeholder="Senha">
+
+                    <div class="link-ajuda">
+                        <span class="text-red">Esqueceu a senha?</span>
+                        <span class="text-gray">Precisa de ajuda?</span>
+                    </div>
+
+                    <input onclick="test();" id="link" type="button" name="" value="Entrar">
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--FIM MODAL PARA TODAS AS TELAS-->
+
+        
+    	<footer>
+            <h2>Entre em contato para mais informações</h2>
+            <div class="box-footer">
+                <div class="box-left-footer">
+                    <ul>
+                        <li>Rua das Colhetas, 258-A, Apipucos</li>
+                        <li>Recife, PE - Brasil</li>
+                        <li>CEP: 10254-330</li>
+                        <br>
+                        <br>
+                        <li>NÓS NA TRILHA PASSEIOS LTDA</li>
+                        <li>08.591.212/0004-07</li>
+                    </ul>
+                </div>
+
+                <div class="logo-footer">
+                    <img src="images/logo.svg">
+               </div>
+               
+               <div class="box-rigth-footer">
+                   <span>Encontre-nos nas redes sociais</span>
+                   <ul>
+                       <li>
+                           <img src="images/facebook.svg">
+                       </li>
+                       <li>
+                           <img src="images/instagram.svg">
+                       </li>
+                       <li>
+                           <img src="images/whatsapp.svg">
+                       </li>
+                   </ul>
+                   <ul>
+                       <li>
+                           <img src="images/pinterest.svg">
+                       </li>
+                       <li>
+                           <img src="images/twitter.svg">
+                       </li>
+                       <li>
+                           <img src="images/youtube.svg">
+                       </li>
+                   </ul>
+                   <span>contato@nosnatrilha.com.br</span>
+               </div>
+            </div>
+            
+        </footer>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
