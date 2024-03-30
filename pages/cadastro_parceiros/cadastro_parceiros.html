@@ -56,15 +56,15 @@
 					<form class="form"  
 					action="https://formspree.io/f/mpzvjgaa" 
 					method="POST">
-						<h3 class="title_personalizado">Cadastro - Parceiros</h3>
-	    				<div class="form-line">
-	    					<div class="box-form-line">
-								<label>
-									Nome/Razão Social
-									<input class="input" type="text" name="Nome/Razão Social">
-								</label>
-	    					</div>
-						</div>
+						<h3 class="title_personalizado">Torne-se Parceiro</h3>
+						<label>
+							Seu Nome Completo
+							<input class="input" type="text" name="Nome Completo">
+						</label>
+						<label>
+							Nome/Razão Social da Empresa
+							<input class="input" type="text" name="Nome/Razão Social">
+						</label>
 	    				<label>
 							E-mail
 							<input class="input" type="email" name="Email">
@@ -73,22 +73,21 @@
 							Número de telefone
 							<input class="input" type="text" name="Número de telefone">
 						</label>
-						
 						<h3 class="title_personalizado">Endereço</h3>
 	    				<div class="form-line">
-							<div class="box-form-line">
+							<div >
 								<label>
 									CEP
 									<input class="input" type="text" name="CEP">
 								</label>
 							</div>
-	    					<div class="box-form-line">
+	    					<div >
 	    						<label>
 									Estado
 									<input class="input" type="text" name="Estado">
 								</label>
 	    					</div>
-	    					<div class="box-form-line">
+	    					<div >
 	    						<label>
 									Cidade
 									<input class="input" type="text" name="Cidade">
@@ -96,75 +95,76 @@
 	    					</div>
 	    				</div>
 						<div class="form-line">
-	    					<div class="box-form-line">
 	    						<label>
 									Número
-									<input class="input" type="text" name="Número">
+									<input class="input small" type="text" name="Número">
 								</label>
-	    					</div>
-	    				</div>
-						
-						<div class="card-sobre-parceiros">
-		    			<h3 class="title_personalizado">Sobre sua Empresa</h3>
-		    			<div class="form-sobre" id="fs-frm">
-		    				<label>
-								CNPJ / MEI
-								<input id="input" class="input" type="text" name="CNPJ/MEI">
-							</label>
-	    					
-							<label>Porte da sua empresa</label>
-							<select id="opcoes">
-							  <option>Selecione</option>
-							  <option>Pequeno</option>
-							  <option>Médio</option>
-							  <option>Grande</option>
-							</select>
-		    				<br>
-	    					<span>Qual/quais tipo(s) de serviço sua empresa oferece?</span>
-	    					<div class="box-form-sobre">
-	    						<input class="radio left" 
-								type="checkbox" 
-								name="Transporte" 
-								value="Transporte">
-	    						<label>Transporte</label>
-		    					<input class="radio" 
-								type="checkbox" 
-								name="Equipamentos de Escalada" 
-								value="Equipamentos de Escalada">
-		    					<label>Equipamentos de Escalada</label>
-		    					<input class="radio" 
-								type="checkbox"
-								 name="Hospedagem" 
-								 value="Hospedagem">
-		    					<label>Hospedagem</label>
-		    				</div>
-                            <label>Caso outro, qual?</label>
-	    					<input id="input" class="input" type="text" name="Outro tipo de serviço">
-	    					<br>
-	    					<span>Escolha seu plano de assinatura</span>
-	    					<div>
-								<div class="box-form-sobre-radio">
-									<label>
-										<input class="radio left"  type="radio" name="Plano de Assinatura Simples">
-										Plano Simples | R$ 20,00 
-									</label>
-	    						</div>
-	    						<div class="box-form-sobre-radio">
-		    						<label>
-										Plano Silver | R$ 50,00
-										<input class="radio left"  type="radio" name="Plano de Assinatura Silver">
-									</label>
-	    						</div>
-	    						<div class="box-form-sobre-radio">
-		    						<label>
-										Plano Gold | R$ 100,00
-										<input class="radio left"  type="radio" name="Plano de Assinatura Gold">
-									</label>
-	    						</div>
-		    				</div>
-		    				<p>*Informações sobre os planos</p>
-		    			</div>
+	    						<label>
+									Bairro
+									<input class="input" type="text" name="Bairro">
+								</label>
 						</div>
+							<label>
+								Complemento
+								<input class="input" type="text" name="Complemento">
+							</label>
+							<div>
+							<h3 class="title_personalizado">Sobre sua Empresa</h3>
+							<div id="fs-frm">
+								<label>
+									CNPJ / MEI
+									<input id="input" class="input" type="text" name="CNPJ/MEI">
+								</label>
+								
+								<label>Porte da sua empresa</label>
+								<select name="Porte da Empresa" id="opcoes">
+								  <option>Selecione</option>
+								  <option value="Pequeno">Pequeno</option>
+								  <option value="Médio">Médio</option>
+								  <option value="Grande">Grande</option>
+								</select>
+								<br>
+								<span>Qual/quais tipo(s) de serviço sua empresa oferece?</span>
+								<div class="box_servicos">
+									<div>
+										<label>
+										<input
+										type="checkbox" 
+										name="Transporte" 
+										value="Transporte">
+										Transporte</label>
+									</div>
+									<div>
+										<label>
+										<input 
+										type="checkbox" 
+										name="Equipamentos de Escalada" 
+										value="Equipamentos de Escalada">
+										Equipamentos de Escalada</label>
+									</div>
+									<div>
+										<label>
+										<input 
+										type="checkbox"
+										name="Hospedagem" 
+										value="Hospedagem">
+										Hospedagem</label>
+									</div>
+								</div>
+								<label>Caso outro, qual?</label>
+								<input id="input" class="input" type="text" name="Outro tipo de serviço">
+								<br>
+								<div class="box_plano_assinatura"></div>
+								<label>Plano de Assinatura de Interesse</label>
+								<select name="Plano" id="opcoes">
+									<option>Selecione</option>
+									<option value="Plano Simples">Plano Simples</option>
+									<option value="Plano Silver">Plano Silver</option>
+									<option value="Plano Gold">Plano Gold</option>
+								</select>
+								<p>*Informações sobre os planos</p>
+							</div>
+	    				</div>
 						<div id="btn_enviar">
 							<input type="submit" value="Enviar" >
 						</div>

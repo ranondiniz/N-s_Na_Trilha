@@ -29,11 +29,8 @@
     padding: 0 2em;
 }
 
-.card-form-parceiros h3{
-    text-align: center;
-    color: black;
-    font-weight: normal;
-    margin-top: 1em;
+.form label, span {
+    font-weight: 600;
 }
 
 .card-form-parceiros form label{
@@ -42,49 +39,37 @@
     margin-top: 1em;
 }
 
+.title_personalizado {
+    font-size: 1.5em;
+    color: #616e57;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 1em;
+}
+
 .form-line{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;  
     gap: 14px;
     width: 100%;
 }
 
-.box-form-line{
-    width: 100%;
-}
 
-.input{
+.input {
     height: 33px;
     color: black;
     width: 100%;
+    border: 1px solid rgb(153, 153, 132);
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 0.5em;
 }
 
-.input-line{
-    width: 95%;
-    margin-left: 5%;
+.input:focus {
+    box-shadow: 0 0 0 1px #598a64;
+    outline: none;
 }
 
-.label-line{
-    margin-left: 5%;
-}
-
-.input-line-tall{
-    height: 33px;
-    color: black;
-    width: 140%;
-}
-
-
-.card-sobre-parceiros{
-    padding: 0 2em;
-    padding-top: 3em;
-}
-
-.card-sobre-parceiros h3{
-    color: #859479;
-    text-align: left;
-
+.small {
 }
 
 #opcoes {
@@ -93,6 +78,8 @@
     font-size: 1em;
     border-radius: 20px;
     background-color: #859479;
+
+    margin: 0.5em 0 1.5em 0;
 }
 
 .box-form-sobre{
@@ -100,26 +87,15 @@
     flex-direction: row;
     align-items: center;
 }
-.radio{
-    margin: 4% 1% 0 5%;
-}
-.left{
-    margin-left: 0%;
-}
 
-.box-form-sobre-radio{
+.box_servicos {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
-.form-sobre p{
-    color: black;
-    font-size: 12px;
-    margin-top: 1%;
-}
 
-.form-sobre span{
-    color: black;
+.left{
+    margin-left: 0%;
 }
 
 #btn_enviar {
@@ -128,10 +104,10 @@
 
 #btn_enviar input {
     background-color: #0F270F;
-    width: 100px;
-    height: 40px;
+    width: 120px;
+    height: 50px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.1em;
     border-top-left-radius: 50px;
     color: #ffffff;
 }
@@ -148,9 +124,6 @@
         margin-top: 2em;
         padding: 0 2em;
         padding-top: 3em;
-    }
-    #input{
-        margin-bottom: 2em !important;
     }
 
     .box-form-sobre{
