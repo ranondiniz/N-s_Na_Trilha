@@ -164,6 +164,22 @@ body {
     font-size: 1em;
 }
 
+#dados_login {
+    display: none;
+}
+
+#dados_login h3 {
+    color: #0F270F;
+}
+
+#dados_login.exibido {
+    padding: 1em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .clear{
     clear: both;
 }

@@ -53,17 +53,17 @@
     		<div class="box-cards">
 	    		<div class="card-form-vendedor">
 	    			<h3>Cadastro do Parceiro</h3>
-	    			<form class="form">
+	    			<form class="form" id="form_cadastro">
 	    				<div class="box_dados">
                                 <label>Nome/Razão Social da empresa
-                                    <input class="input" type="email" name="">
+                                    <input class="input" type="text" id="nameInput">
                                 </label>
                                 <label>Email
-                                    <input class="input" type="email" name="">
+                                    <input class="input" type="email" id="emailInput">
                                 </label>
                                 <label>
                                     Telefone
-                                    <input class="input" type="text" name="">
+                                    <input class="input" type="text" id="phoneInput">
                                 </label>
 	    				</div>
                         <h3>Endereço</h3>
@@ -71,53 +71,53 @@
                             <div>
                                 <label>
                                     CEP
-                                    <input class="input" type="text" />
+                                    <input class="input" type="text" id="cepInput" />
                                 </label>
                                 <label>
                                     UF
-                                    <input class="input" type="text" />
+                                    <input class="input" type="text" id="ufInput"/>
                                 </label>
                                 <label>
                                     Cidade
-                                    <input class="input" type="text" />
+                                    <input class="input" type="text" id="cidadeInput"/>
                                 </label>
                             </div>
                             <label>
                                 Rua
-                                <input class="input" type="text" />
+                                <input class="input" type="text" id="ruaInput"/>
                             </label>
                             <label>
                                 Bairro
-                                <input class="input" type="text" />
+                                <input class="input" type="text" id="bairroInput"/>
                             </label>
                             <label>
                                 Complemento
-                                <input class="input" type="text" />
+                                <input class="input" type="text" id="complementoInput"/>
                             </label>
                             <label>
                                 Número
-                                <input class="input input-line-small" type="text" />
+                                <input class="input input-line-small" type="text" id="numeroInput"/>
                             </label>
                         </div>
                         <div>
                             <h3>Sobre a Empresa</h3>
                             <div class="form-sobre">
                                 <label>CNPJ / MEI</label>
-                                <input id="input" class="input" type="text" name="">
+                                <input class="input" type="text" id="identificadorInput">
                                 
                                 <span>Qual o porte da sua empresa?</span>
                                 <div class="box-form-sobre">
                                     <div>
-                                        <select class="opcoes">
-                                            <option>Pequeno</option>
-                                            <option>Médio</option>
-                                            <option>Grande</option>
+                                        <select class="opcoes" id="porte">
+                                            <option value="1">Pequeno</option>
+                                            <option value="2">Médio</option>
+                                            <option value="3">Grande</option>
                                         </select>
                                     </div>
                                 </div>
                                 <span>Escolha seu plano de assinatura</span>
                                 <div>
-                                    <select class="opcoes">
+                                    <select class="opcoes" id="planoAssinatura">
                                         <option>Simples</option>
                                         <option>Silver</option>
                                         <option>Gold</option>
@@ -126,11 +126,14 @@
                                 <label>Senha</label>
                                 <input class="input" type="password" name="">
                                 <label>Confirmar senha</label>
-                                <input class="input" type="password" name="">
+                                <input class="input" type="password" name="" id="senhaInput">
                             </div>
                         </div>
                         <div id="btn_cadastrar">
                             <input type="submit" name="" value="Cadastrar">
+                        </div>
+                        <div id="dados_login">
+                            <h3>Dados de primeiro acesso do parceiro:</h3>
                         </div>
 	    			</form>
 
@@ -227,5 +230,6 @@
     </footer>
     </main>
     <script type="text/javascript" src="script.js"></script>
+    <script src="form.js"></script>
 </body>
 </html>
