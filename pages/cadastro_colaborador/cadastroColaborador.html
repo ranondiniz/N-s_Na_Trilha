@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Parceiro - Nós na trilha</title>
+    <link rel="stylesheet" href="../../components/every_pages.css">
     <link rel="stylesheet" href="estiloColaborador.css">
-    <link rel="stylesheet" href="everypages.css">
     
   <!-- Importação dos arquivos CSS do Slick carousel -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
@@ -19,128 +19,121 @@
 
 </head>
 <body>
-	<header id="box-principal">
-        <div class="header-top">
-            <nav class="botoes-vendedor">
-                <span class="Central-vendedor buttons">Central do Parceiro</span>
-                <span class="buttons" style="color: #0F270F"><a href="../cadastro_vendedor/cadastroVendedor.html">Torne-se Parceiro</a></span>
-            </nav>
-            <div class="barra-pesquisa">
-                <img src="images/icon-search.png" alt="">
-                <input 
-                type="search" 
-                name="pesquisar" 
-                id="input-pesquisa"
-                placeholder="Buscar..." onclick="this.placeholder=''">
+	<header>
+        <nav class="nav_header">
+            <span id="central_colab" class="nav_item">Central de Colaboradores</span>
+            <span>Parcerias</span>
+            <div class="div_busca">
+                <input type="text" id="txt_busca">
+                <img src="images/lupa_search.svg" class="btn_busca" alt="Buscar">
             </div>
-            <nav class="botoes-entrar-cadastrar">
-                <span class="buttons"><a href="../cadastro_cliente/cadastroCliente.html">Cadastre-se</a></span>
-            </nav>
-        </div>
-        <div class="header-bottom">
-            <a href="../home/index.html">
-                <img id="logo" src="images/logo_nnt.png" alt="Logo da Nós na trilha">
-            </a>
-            <nav>
-                <span class="buttons"><a href="../home/index.html">HOME</a></span>
-                <span class="buttons"><a href="../produtos/produtos.html">PRODUTOS</a></span>
-                <span class="buttons"><a href="../catalogos/catalogos.html">CATÁLOGOS</a></span>
-                <span class="buttons"><a href="../nossa_historia/nossaHistoria.html">NOSSA HISTÓRIA</a></span>
-                <span class="buttons"><a href="../contato/contato.html">CONTATO</a></span>
-            </nav>
+            <span id="login" class="nav_item">Login</span>
+            <span>Cadastre-se</span>
+        </nav>
+        <nav class="nav_header_2">
             <div>
-                <img class="icon-header entrar" src="images/perfil.svg" alt="Ícone de pessoa">
-                <img class="icon-header" src="images/notificacoes.svg" alt="ícone de sino">
-                <a href="../carrinho_compras/carrinhoCompras.html">
-                    <img class="icon-header" src="images/carrinho.svg" alt="Ícone de carrinho">
-                </a>
+                <img src="../../components/images/logo_principal.svg" alt="Logo da Nós na Trilha" class="logo_principal">
             </div>
-        </div>
-        <hr>
+            <div class="opcoes_nav">
+                <li>HOME</li>
+                <li>ROTEIROS</li>
+                <li>FEED</li>
+                <li>NOSSA HISTÓRIA</li>
+                <li>CONTATO</li>
+            </div>
+            <div class="icons_nav">
+                <img src="../../components/images/perfil.svg" alt="Perfil" id="img_perfil">
+                <img src="../../components/images/notificacoes.svg" alt="Notificações" id="img_sino">
+                <img src="../../components/images/carrinho.svg" alt="Carrinho de Compras" id="img_cart">
+            </div>
+        </nav>
     </header>
-
-    <!--  Este header só será ativado quando as páginas estiverem no modo responsivo! -->
     <main>
     	<section class="box-central">
-            <div class="info-breadcrumbs">
-                <span class="breadcrumbs">Home |<span> Torne-se Parceiro</span></span>
-            </div>
     		<div class="box-cards">
-    			<div class="banner">
-	    			<img src="images/banner_seja_parceiro.png">
-	    		</div>
 	    		<div class="card-form-vendedor">
 	    			<h3>Cadastro do Parceiro</h3>
 	    			<form class="form">
-	    				<div class="form-line">
-	    					<div class="box-form-line">
-	    						<label >Nome Completo</label>
-	    						<input class="input" type="text" name="">
-	    					</div>
-	    					<div class="box-form-line">
-	    						<label class="label-line">Telefone</label>
-	    						<input class="input-line input" type="text" name="">
-	    					</div>
+	    				<div class="box_dados">
+                                <label>Nome/Razão Social da empresa
+                                    <input class="input" type="email" name="">
+                                </label>
+                                <label>Email
+                                    <input class="input" type="email" name="">
+                                </label>
+                                <label>
+                                    Telefone
+                                    <input class="input" type="text" name="">
+                                </label>
 	    				</div>
-	    				<label>Nome/Razão Social da empresa</label>
-	    				<input class="input" type="email" name="">
-
-                        <label>Endereço</label>
-	    				<div class="input-container">
-                            <input type="text" id="caixaDeTexto" class="texto-cep" placeholder="CEP" />
-                            <input type="text" id="caixaDeTexto" class="texto-cep" placeholder="Rua" />
-	    				    <input type="text" id="caixaDeTexto" class="texto-cep" placeholder="Bairro" />
-                            <input type="text" id="caixaDeTexto" class="texto-cep" placeholder="Número da fachada" />
-                            <input type="text" id="caixaDeTexto" class="texto-cep" placeholder="Cidade" />
-                            <input type="text" id="caixaDeTexto" class="texto-cep" placeholder="Estado" />
+                        <h3>Endereço</h3>
+	    				<div class="box_dados">
+                            <div>
+                                <label>
+                                    CEP
+                                    <input class="input" type="text" />
+                                </label>
+                                <label>
+                                    UF
+                                    <input class="input" type="text" />
+                                </label>
+                                <label>
+                                    Cidade
+                                    <input class="input" type="text" />
+                                </label>
+                            </div>
+                            <label>
+                                Rua
+                                <input class="input" type="text" />
+                            </label>
+                            <label>
+                                Bairro
+                                <input class="input" type="text" />
+                            </label>
+                            <label>
+                                Complemento
+                                <input class="input" type="text" />
+                            </label>
+                            <label>
+                                Número
+                                <input class="input input-line-small" type="text" />
+                            </label>
+                        </div>
+                        <div>
+                            <h3>Sobre a Empresa</h3>
+                            <div class="form-sobre">
+                                <label>CNPJ / MEI</label>
+                                <input id="input" class="input" type="text" name="">
+                                
+                                <span>Qual o porte da sua empresa?</span>
+                                <div class="box-form-sobre">
+                                    <div>
+                                        <select class="opcoes">
+                                            <option>Pequeno</option>
+                                            <option>Médio</option>
+                                            <option>Grande</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <span>Escolha seu plano de assinatura</span>
+                                <div>
+                                    <select class="opcoes">
+                                        <option>Simples</option>
+                                        <option>Silver</option>
+                                        <option>Gold</option>
+                                    </select>
+                                </div>
+                                <label>Senha</label>
+                                <input class="input" type="password" name="">
+                                <label>Confirmar senha</label>
+                                <input class="input" type="password" name="">
+                            </div>
+                        </div>
+                        <div id="btn_cadastrar">
+                            <input type="submit" name="" value="Cadastrar">
                         </div>
 	    			</form>
 
-	    			<div class="card-sobre-vendedor">
-		    			<h3>Sobre sua Empresa</h3>
-		    			<form class="form-sobre">
-		    				<label>CNPJ / MEI</label>
-	    					<input id="input" class="input" type="text" name="">
-	    					
-	    					<span>Qual o porte da sua empresa?</span>
-	    					<div class="box-form-sobre">
-	    						<form>
-                                    <select name "tamanhoEmpresa">
-                                        <option name "Micro">Micro</option>
-                                        <option name "Pequeno">Pequeno</option>
-                                        <option name "Médio">Médio</option>
-                                        <option name "Grande">Grande</option>
-                                    </select>
-                                </form>
-		    				</div>
-		    				<br>
-	    					<span>Qual/Quais tipo(s) de serviço sua empresa oferece?</span>
-	    					<div class="box-form-sobre">
-	    						<input id="input" class="input" type="text" name="">
-		    				</div>
-	    					<br>
-	    					<span>Escolha seu plano de assinatura</span>
-	    					<div>
-	    						<form>
-                                    <select name "assinatura">
-                                        <option name "Simples">Simples</option>
-                                        <option name "Silver">Silver</option>
-                                        <option name "Gold">Gold</option>
-                                    </select>
-                                </form>
-		    				</div>
-		    				<p>*Informações sobre os planos</p>
-                            <p>Plano Simples: R$20,00</p>
-                            <p>Plano Silver: R$50,00</p>
-                            <p>Plano Gold: R$100,00</p>
-		    			</form>
-                        <label>Senha</label>
-	    				<input class="input" type="password" name="">
-
-	    				<label>Confirmar senha</label>
-	    				<input class="input" type="password" name="">
-		    		</div>
-		    		<input class="sobre-submit" type="submit" name="" value="Cadastrar">
 		    		<div class="clear"></div><!-- Limpeza da fltuação -->
 	    		</div>
     		</div>
@@ -204,57 +197,34 @@
         </div>
     </section>
 
-    <!--FIM MODAL PARA TODAS AS TELAS-->
-
-        
-    	<footer>
-            <h2>Entre em contato para mais informações</h2>
-            <div class="box-footer">
-                <div class="box-left-footer">
-                    <ul>
-                        <li>Rua das Colhetas, 258-A, Apipucos</li>
-                        <li>Recife, PE - Brasil</li>
-                        <li>CEP: 10254-330</li>
-                        <br>
-                        <br>
-                        <li>NÓS NA TRILHA PASSEIOS LTDA</li>
-                        <li>08.591.212/0004-07</li>
-                    </ul>
+    <footer>
+        <div>ENTRE EM CONTATO PARA MAIS INFORMAÇÕES</div>
+        <section>
+            <div class="left margin_top">
+                <div>
+                    <div>Rua das Colhetas, 258-A, Apipucos</div>
+                    <div>Recife, PE - Brasil</div>
+                    <div>CEP: 10254-330</div>
+                    <div class="margin_top">NÓS NA TRILHA PASSEIOS LTDA</div>
+                    <div>08.591.212/0004-07</div>
                 </div>
-
-                <div class="logo-footer">
-                    <img src="images/logo.svg">
-               </div>
-               
-               <div class="box-rigth-footer">
-                   <span>Encontre-nos nas redes sociais</span>
-                   <ul>
-                       <li>
-                           <img src="images/facebook.svg">
-                       </li>
-                       <li>
-                           <img src="images/instagram.svg">
-                       </li>
-                       <li>
-                           <img src="images/whatsapp.svg">
-                       </li>
-                   </ul>
-                   <ul>
-                       <li>
-                           <img src="images/pinterest.svg">
-                       </li>
-                       <li>
-                           <img src="images/twitter.svg">
-                       </li>
-                       <li>
-                           <img src="images/youtube.svg">
-                       </li>
-                   </ul>
-                   <span>contato@nosnatrilha.com.br</span>
-               </div>
             </div>
-            
-        </footer>
+            <div class="right margin_top">
+                <div>Encontre-nos nas redes sociais</div>
+                <div>
+                    <img src="../../components/images/facebook.svg">
+                    <img src="../../components/images/instagram.svg">
+                    <img src="../../components/images/whatsapp.svg">
+                </div>
+                <div>
+                    <img src="../../components/images/pinterest.svg">
+                    <img src="../../components/images/twitter.svg">
+                    <img src="../../components/images/youtube.svg">
+                </div>
+                <div>contato@nosnatrilha.com.br</div>
+            </div>
+        </section>
+    </footer>
     </main>
     <script type="text/javascript" src="script.js"></script>
 </body>

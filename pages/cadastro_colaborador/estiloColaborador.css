@@ -5,18 +5,7 @@
 .box-cards{
     display: flex;
     flex-direction: row;
-}
-
-.texto-cep{
-    color: rgb(0, 0, 0);
-    margin-right: 10px;
-}
-
-.input-container{
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
+    justify-content: center;
 }
 
 .placeholder {
@@ -26,30 +15,15 @@
     color: #999; 
 }
 
-#caixaDeTexto:focus + .placeholder {
-    display: none;
-}
-
 .barra-pesquisa {
     display: flex;
     width: 50%;
 }
 
-header {
-    background-color: #3E4533; /* Define a cor de fundo do cabeçalho */
-    color: #ffffff; /* Define a cor do texto dentro do cabeçalho */
-    padding: 20px; /* Adiciona um preenchimento ao redor do conteúdo dentro do cabeçalho */
-  }
-
 body {
     background-color: #f8ece4; 
     margin: 0; 
     padding: 0; 
-}
-
-.banner img {
-    width: 75%; 
-    height: auto; 
 }
 
 .card-form-vendedor{
@@ -68,8 +42,10 @@ body {
 .card-form-vendedor h3{
     text-align: center;
     color: black;
-    font-weight: normal;
+    font-weight: 600;
     margin-top: 1em;
+    color: #0F270F;
+    font-size: 1.5em;
 }
 
 .card-form-vendedor form label{
@@ -87,6 +63,23 @@ body {
 
 .box-form-line{
     width: 100%;
+}
+
+.box_dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.box_dados div {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.box_dados input {
+    margin-top: 1em;
 }
 
 .input{
@@ -115,19 +108,8 @@ body {
 }
 
 .input-line-small{
-    width: 50%;
-    margin-left: 50%;
-}
-
-.card-sobre-vendedor{
-    padding: 0 2em;
-    padding-top: 3em;
-}
-
-.card-sobre-vendedor h3{
-    color: #859479;
-    text-align: left;
-
+    width: 40%;
+    margin-right: 50%;
 }
 
 .box-form-sobre{
@@ -135,6 +117,16 @@ body {
     flex-direction: row;
     align-items: center;
 }
+
+.opcoes {
+    height: 40px;
+    border: none;
+    font-size: 1em;
+    border-radius: 20px;
+    background-color: #859479;
+    margin-top: 1em;
+}
+
 .radio{
     margin: 4% 1% 0 5%;
 }
@@ -157,17 +149,21 @@ body {
     color: black;
 }
 
-.sobre-submit{
-    background-color: #0F270F;
-    width: 100px;
-    height: 40px;
-    cursor: pointer;
-    font-size: 16px;
-    padding-left: 2%;
-    float: right;
-    border-top-left-radius: 50px;
-    
+#btn_cadastrar {
+    text-align: right;
+    margin: 1em 0;
 }
+
+#btn_cadastrar input {
+    background-color: #0F270F;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+    border-top-left-radius: 50px;
+    color: #ffffff;
+    font-size: 1em;
+}
+
 .clear{
     clear: both;
 }
@@ -176,11 +172,7 @@ body {
     main section {
         font-size: 21px;
     }
-    .card-sobre-vendedor{
-        margin-top: 2em;
-        padding: 0 2em;
-        padding-top: 3em;
-    }
+
     #input{
         margin-bottom: 2em !important;
     }
