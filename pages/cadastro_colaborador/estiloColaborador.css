@@ -118,6 +118,16 @@ body {
     align-items: center;
 }
 
+.box_opcoes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.box_opcoes .opcoes {
+    width: 20%;
+}
+
 .opcoes {
     height: 40px;
     border: none;
