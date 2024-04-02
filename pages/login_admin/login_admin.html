@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Administrador</title>
+    <link rel="stylesheet" href="login_admin.css">
+    <link rel="stylesheet" href="../../components/every_pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav_header">
+            <span id="central_colab" class="nav_item">Central de Colaboradores</span>
+            <span>Parcerias</span>
+            <div class="div_busca">
+                <input type="text" id="txt_busca">
+                <img src="images/lupa_search.svg" class="btn_busca" alt="Buscar">
+            </div>
+            <span id="login" class="nav_item">Login</span>
+            <span>Cadastre-se</span>
+        </nav>
+        <nav class="nav_header_2">
+            <div>
+                <img src="../../components/images/logo_principal.svg" alt="Logo da Nós na Trilha" class="logo_principal">
+            </div>
+            <div class="opcoes_nav">
+                <li>HOME</li>
+                <li>ROTEIROS</li>
+                <li>FEED</li>
+                <li>NOSSA HISTÓRIA</li>
+                <li>CONTATO</li>
+            </div>
+            <div class="icons_nav">
+                <img src="../../components/images/perfil.svg" alt="Perfil" id="img_perfil">
+                <img src="../../components/images/notificacoes.svg" alt="Notificações" id="img_sino">
+                <img src="../../components/images/carrinho.svg" alt="Carrinho de Compras" id="img_cart">
+            </div>
+        </nav>
+    </header>
+    <main>
+         <div class="box_principal">
+            <form>
+                <h1>Login Administrador</h1>
+                <div>
+                    <label>Email</label>
+                    <input type="email">
+                </div>
+                <div>
+                    <label>Senha</label>
+                    <input type="password">    
+                </div>
+                <div id="btn_login">
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+         </div>       
+    </main>
+</body>
+</html>
