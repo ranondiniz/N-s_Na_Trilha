@@ -15,13 +15,13 @@
 <body>
 	<header>
         <nav class="nav_header">
-            <span>Central de Colaboradores</span>
+            <span id="central_colab" class="nav_item">Central de Colaboradores</span>
             <span>Parcerias</span>
             <div class="div_busca">
                 <input type="text" id="txt_busca">
                 <img src="images/icon-search.png" class="btn_busca" alt="Buscar">
             </div>
-            <span>Login</span>
+            <span id="login" class="nav_item">Login</span>
             <span>Cadastre-se</span>
         </nav>
         <nav class="nav_header_2">
@@ -156,6 +156,65 @@
                 </div>
             </div>
         </section>
+
+        <!--INICIO MODAL PARA TODAS AS TELAS-->
+
+        <section class="fundo-modal cliente-modal">
+            <div class="modal cliente">
+                <span class="legenda">Home | Login</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>LOGIN - USUÁRIO</h3>
+                    <br>
+                    <span class="text-modal">Bem Vindo de Volta!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/button-google.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Senha">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">Esqueceu a senha?</span>
+                            <span class="text-gray">Precisa de ajuda?</span>
+                        </div>
+
+                        <input onclick="test2()" id="link2" type="button" name="" value="Entrar">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="fundo-modal  colaborador-modal">
+            <div class="modal colaborador">
+                <span class="legenda">Home | Central de Colaboradores | Login</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>LOGIN - COLABORADOR</h3>
+                    <br>
+                    <span class="text-modal">Bem Vindo de Volta!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/button-google.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Senha">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">Esqueceu a senha?</span>
+                            <span class="text-gray">Precisa de ajuda?</span>
+                        </div>
+
+                        <input onclick="test();" id="link" type="button" name="" value="Entrar">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--FIM MODAL PARA TODAS AS TELAS-->
+
     </main>
 
     <footer>
@@ -186,5 +245,6 @@
             </div>
         </section>
     </footer>
+    <script type="text/javascript" src="../../components/script.js"></script>
 </body>
 </html>
