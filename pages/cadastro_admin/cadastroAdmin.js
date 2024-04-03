@@ -25,13 +25,15 @@ form.addEventListener('submit', function(event) {
     })
     .then(response => {
         if (!response.ok) {
-            throw new Error('Não foi possível enviar os dados.')
+            if (response.status === 409) {
+                alert('Email já cadastrado.')
+                return;
+            }
+        } else if (response.ok) {
+            alert('Cadastro efetuado!')
+            form.reset()
         }
         return response.json()
-    })
-    .then(data => {
-        alert('Cadastro efetuado!')
-        form.reset();
     })
     .catch(error => {
         console.error('Erro:', error);
