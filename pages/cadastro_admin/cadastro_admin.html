@@ -46,115 +46,37 @@
 
     <main>
     	<section class="box-central">
-    		<div class="info-breadcrumbs">
-                <span class="breadcrumbs">Home |<span> Cadastre-se</span></span>
-            </div>
             
     		<div class="box-cards">
-    			<div class="card-info-admin">
-	    			<img src="images/banner_admin.png">
-	    		</div>
-	    		
 	    		<div class="card-form-admin">
 	    			<h3>Cadastro do Admin</h3>
-	    			<form class="form">
+	    			<form class="form" id="form_cadastro">
 	    				<div class="form-line">
 	    					<div class="box-form-line">
-	    						<label >Nome</label>
-	    						<input class="input" type="text" name="">
-	    					</div>
-	    					<div class="box-form-line">
-	    						<label class="label-line">Sobrenome</label>
-	    						<input class="input-line input" type="text" name="">
+	    						<label>Nome Completo</label>
+	    						<input class="input" type="text" id="nameInput">
 	    					</div>
 	    				</div>
 	    				<label>E-mail</label>
-	    				<input class="input" type="email" name="">
+	    				<input class="input" type="email" id="emailInput">
 
 	    				<label>Número de telefone</label>
-	    				<input class="input" type="text" name="">
+	    				<input class="input" type="text" id="phoneInput">
 
 	    				<label>Senha</label>
-	    				<input class="input" type="password" name="">
+	    				<input class="input" type="password" id="senhaInput">
 
 	    				<label>Confirmar senha</label>
 	    				<input class="input" type="password" name="">
 
-	    				<div class="form-line">
-	    					<div class="box-form-line">
-	    						<label>Endereço</label>
-	    						<input class="input-line-tall input" type="text" name="">
-	    					</div>
-	    					<div class="box-form-line">
-	    						<label class="label-line-small">CEP</label>
-	    						<input class="input-line-small input" type="text" name="">
-	    					</div>
-	    				</div>
+                        <input class="sobre-submit" type="submit" name="" value="Cadastrar">
 	    			</form>
 	    			
-		    		<input class="sobre-submit" type="submit" name="" value="Cadastrar">
 		    		<div class="clear"></div>
 	    		</div>
     		</div>
     	</section>
 
-        <!--INICIO MODAL PARA TODAS AS TELAS-->
-
-        <section class="fundo-modal admin-modal">
-            <div class="modal admin">
-                <span class="legenda">Home | Login</span>
-                <div class="box-modal">
-                    <img class="img-fechar" src="../../components/images/fechar.png">
-                    <div class="clear"></div><!-- Limpeza da flutuação -->
-                    <h3>LOGIN - USUÁRIO</h3>
-                    <br>
-                    <span class="text-modal">Bem Vindo de Volta!</span>
-                    <br>
-                    <img class="img-google" src="../../components/images/button-google.png">
-                    <form>
-                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
-                        <br>
-                        <input class="input-login" type="password" name="" placeholder="Senha">
-
-                        <div class="link-ajuda">
-                            <span class="text-red">Esqueceu a senha?</span>
-                            <span class="text-gray">Precisa de ajuda?</span>
-                        </div>
-
-                        <input onclick="test2()" id="link2" type="button" name="" value="Entrar">
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <section class="fundo-modal  colaborador-modal">
-            <div class="modal colaborador">
-                <span class="legenda">Home | Central de Colaboradores | Login</span>
-                <div class="box-modal">
-                    <img class="img-fechar" src="../../components/images/fechar.png">
-                    <div class="clear"></div><!-- Limpeza da flutuação -->
-                    <h3>LOGIN - COLABORADOR</h3>
-                    <br>
-                    <span class="text-modal">Bem Vindo de Volta!</span>
-                    <br>
-                    <img class="img-google" src="../../components/images/button-google.png">
-                    <form>
-                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
-                        <br>
-                        <input class="input-login" type="password" name="" placeholder="Senha">
-
-                        <div class="link-ajuda">
-                            <span class="text-red">Esqueceu a senha?</span>
-                            <span class="text-gray">Precisa de ajuda?</span>
-                        </div>
-
-                        <input onclick="test();" id="link" type="button" name="" value="Entrar">
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!--FIM MODAL PARA TODAS AS TELAS-->
         
     	<footer>
             <div>ENTRE EM CONTATO PARA MAIS INFORMAÇÕES</div>
@@ -185,6 +107,6 @@
             </section>
         </footer>
     </main>
-    <script type="text/javascript" src="../../components/script.js"></script>
+    <script src="cadastroAdmin.js"></script>
 </body>
 </html>
