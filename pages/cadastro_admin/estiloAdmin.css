@@ -7,6 +7,7 @@
 .box-cards{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .card-info-admin{
@@ -31,11 +32,11 @@
     padding: 0 2em;
 }
 
-.card-form-admin h3{
+.card-form-admin h3 {
     text-align: center;
     color: black;
-    font-weight: normal;
     margin-top: 1em;
+    font-size: 1.5em;
 }
 
 .card-form-admin form label{
@@ -59,6 +60,7 @@
     height: 33px;
     color: black;
     width: 100%;
+    font-size: 1.2em;
 }
 
 .input-line{
@@ -86,15 +88,15 @@
 }
 
 
-
 .sobre-submit{
-    background-color: #000000;
+    background-color: #3E4533;
     width: 100px;
     height: 50px;
     cursor: pointer;
     font-size: 20px;
     margin: 2em auto;
-    border-radius: 10px;
+    border: none;
+    border-radius: 20px;
     color: #ffffff;
 }
 .clear{
