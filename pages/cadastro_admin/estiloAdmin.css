@@ -60,6 +60,7 @@
     height: 33px;
     color: black;
     width: 100%;
+    font-size: 1.2em;
 }
 
 .input-line{
@@ -85,7 +86,6 @@
     width: 50%;
     margin-left: 50%;
 }
-
 
 
 .sobre-submit{
