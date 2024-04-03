@@ -42,21 +42,25 @@
     </header>
     <main>
          <div class="box_principal">
-            <form>
+            <form id="form_cadastro">
                 <h1>Login Administrador</h1>
                 <div>
                     <label>Email</label>
-                    <input type="email">
+                    <input type="email" id="email">
                 </div>
                 <div>
                     <label>Senha</label>
-                    <input type="password">    
+                    <input type="password" id="senha">    
                 </div>
+                <section id="info_login">
+                    <span>Senha incorreta.</span>
+                </section>
                 <div id="btn_login">
                     <input type="submit" value="Login">
                 </div>
             </form>
          </div>       
     </main>
+    <script src="form.js"></script>
 </body>
 </html>
