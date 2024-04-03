@@ -18,14 +18,15 @@ form.addEventListener('submit', function(event) {
         body: JSON.stringify(formData)
     })
     .then(response => {
-        if (!response.ok && (response.status = 401)) {
+        if (!response.ok && response.status === 401) {
             mostrarErro()
         }
-        
-        if (response.ok && (response.status = 200)) {
-            form.reset()
-            window.location.href = "../cadastro_colaborador/cadastroColaborador.html";
-        }
+
+        return response.json();
+    })
+    .then(data => {
+        const dados = encodeURIComponent(JSON.stringify(data));
+        window.location.href = "../cadastro_colaborador/cadastroColaborador.html?dados=" + dados;
     })
     .catch(error => {
         console.log('Erro', error)
