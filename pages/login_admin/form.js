@@ -18,15 +18,23 @@ form.addEventListener('submit', function(event) {
         body: JSON.stringify(formData)
     })
     .then(response => {
-        if (!response.ok && response.status === 401) {
-            mostrarErro()
+        if (!response.ok) {
+            if (response.status === 401) {
+                mostrarErro()
+                return;
+            }  else {
+                throw new Error("Erro ao realizar login.")
+            }
         }
-
         return response.json();
     })
     .then(data => {
-        const dados = encodeURIComponent(JSON.stringify(data));
-        window.location.href = "../cadastro_colaborador/cadastroColaborador.html?dados=" + dados;
+        if (data) {
+            const dados = encodeURIComponent(JSON.stringify(data));
+            window.location.href = "../page_admin/page_admin.html?dados=" + dados;
+        } else {
+            console.error("Erro: Dados não disponíveis para redirecionamento.");
+        }
     })
     .catch(error => {
         console.log('Erro', error)
