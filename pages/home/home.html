@@ -12,17 +12,18 @@
 
     <link rel="stylesheet" href="home.css">
     <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
         <nav class="nav_header">
-            <span>Central de Colaboradores</span>
+            <span id="central_colab" class="nav_item">Central de Colaboradores</span>
             <span>Parcerias</span>
             <div class="div_busca">
                 <input type="text" id="txt_busca">
                 <img src="images/lupa_search.svg" class="btn_busca" alt="Buscar">
             </div>
-            <span>Login</span>
+            <span id="login" class="nav_item">Login</span>
             <span>Cadastre-se</span>
         </nav>
         <nav class="nav_header_2">
@@ -162,6 +163,109 @@
         <div class="btn_ver_mais">
             <button>Ver mais</button>
         </div>
+        <div class="avaliacao_clientes">
+            <span id="titulo_avaliacao">AVALIAÇÕES DOS CLIENTES</span>
+            <div>
+                <div class="autor_avaliacao">
+                    <img src="images/avaliador.svg" alt="Imagem de perfil do avaliador" id="img_avaliador">
+                    <div>
+                        <h3>Sérgio Lopes</h3>
+                        <span>A experiência foi sensacional, guias responsáveis que viraram amigos e tudo bem organizado. Nós na Trilha é atenciosa para qualquer dúvida, tem o melhor roteiro e o melhor preço.</span>
+                    </div>
+                </div>
+            </div>
+            <span id="compre_conosco">Compre conosco você também!</span>
+        </div>
+
+        <!--INICIO MODAL PARA TODAS AS TELAS-->
+
+        <section class="fundo-modal cliente-modal">
+            <div class="modal cliente">
+                <span class="legenda">Home | Login</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>LOGIN - USUÁRIO</h3>
+                    <br>
+                    <span class="text-modal">Bem Vindo de Volta!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/button-google.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Senha">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">Esqueceu a senha?</span>
+                            <span class="text-gray">Precisa de ajuda?</span>
+                        </div>
+
+                        <input onclick="test2()" id="link2" type="button" name="" value="Entrar">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="fundo-modal  colaborador-modal">
+            <div class="modal colaborador">
+                <span class="legenda">Home | Central de Colaboradores | Login</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>LOGIN - COLABORADOR</h3>
+                    <br>
+                    <span class="text-modal">Bem Vindo de Volta!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/button-google.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Senha">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">Esqueceu a senha?</span>
+                            <span class="text-gray">Precisa de ajuda?</span>
+                        </div>
+
+                        <input onclick="test();" id="link" type="button" name="" value="Entrar">
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!--FIM MODAL PARA TODAS AS TELAS-->
+
+        <div class="box_contato">
+            <h2>CONTATO</h2>
+            <div class="grid_2_columns">
+                <div class="contato_column1">
+                    <div>
+                        <img src="images/icon_telefone.svg" alt="">
+                        <span>+55 81 2725 5991</span>
+                    </div>
+                    <div>
+                        <img src="images/icon_email.svg" alt="">
+                        <span>contato@nosnatrilha.com.br</span>
+                    </div>
+                    <div>
+                        <img src="images/icon_central_atendimento.svg" alt="">
+                        <span>Atendimento ao cliente</span>
+                    </div>
+                    <div>
+                        <img src="images/icon_faq.svg" alt="">
+                        <span>FAQ</span>
+                    </div>
+                </div>
+                <div class="box_newsletter">
+                    <span>Assine nossa Newsletter</span>
+                    <div>
+                        <img src="images/icon_email_cinza.svg" alt="Ícone de email">
+                        <input type="text" name="" placeholder="Insira seu endereço de e-mail">
+                        <span>Quero receber</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div>ENTRE EM CONTATO PARA MAIS INFORMAÇÕES</div>
@@ -191,5 +295,6 @@
             </div>
         </section>
     </footer>
+    <script type="text/javascript" src="../../components/script.js"></script>
 </body>
 </html>

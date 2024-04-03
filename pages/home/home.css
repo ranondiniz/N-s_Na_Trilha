@@ -82,3 +82,138 @@
     font-size: 1.1em;
     cursor: pointer;
 }
+
+.avaliacao_clientes {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20%;
+    background-color: #FFFFFF;
+    gap: 30px;
+}
+
+.avaliacao_clientes #titulo_avaliacao {
+    background-color: #0F270F;
+    color: #FFFBFB;
+    border-radius: 0 0 40px 0;
+    padding: 8px 20px;
+    width: 40%;
+
+    font-size: 1.1em;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 500;
+}
+
+.autor_avaliacao {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.circulo_img img {
+    height: 100%;
+    width: 100%;
+}
+
+#img_avaliador {
+    height: 150px;
+    width: 200px;
+}
+
+.avaliacao_clientes #compre_conosco {
+    text-align: center;
+    border-radius: 30px 30px 0 0;
+    width: 30%;
+    margin-left: 35%;
+    background-color: #0F270F;
+    padding: 10px 5px;
+
+    color: #F1E9E4;
+}
+
+.box_contato {
+    margin-top: 80px;
+
+    h2 {
+        margin-left: 3em;
+        border-left: 3px solid #859479;
+        padding-left: 10px;
+    
+        font-family: "Marcellus SC", serif;
+        font-weight: 500;
+    }
+}
+
+.grid_2_columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 4em;
+
+    font-family: "Scada", sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.box_contato .contato_column1 div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding-bottom: 1em;
+}
+
+.box_contato .contato_column1 div img {
+    height: 35px;
+    cursor: pointer;
+}
+
+.box_newsletter {
+    margin-left: 10em;
+}
+
+.box_newsletter div {
+    display: flex;
+    align-items: center;
+
+    font-size: 0.8em;
+
+    background-color: #FFFAF7;
+    height: 50px;
+    gap: 0.3em;
+
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    padding-left: 10px;
+    
+    img {
+        height: 30px;
+        width: 10%;
+        color: blue;
+    }
+
+    input {
+        height: 30px;
+        width: 60%;
+        box-shadow: none;
+        border: none;
+        font-size: 1.1em;
+        
+    }
+    
+    input:focus {
+        outline: none;
+    }
+
+    span {
+        background-color: #3E4533;
+        height: 100%;
+        width: 30%;
+        color: #FFFAF7;
+        border-radius: 0 10px 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Scada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;  
+}
+
+body {
+    font-size: 10px;
+    background-color: #F1E9E4;
+    width: 100%;
+    font-family: "Scada", sans-serif;
+    margin: auto;
+}
+
+
+.opcoes_nav li{
+    color:#FFFFFF;
+}
+
+.opcoes_nav li:hover {
+    color: #0F270F;
+}
+
+.nav_header span{
+    color: #FFFFFF;
+}
+
+.nav_header span:hover {
+    color: #0F270F;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+main {
+    font-size: 2.3em;
+}
+
+.buttons {
+    cursor: pointer;
+}
+
+.buttons a{
+    text-decoration: none;
+}
+
+.buttons a:hover {
+    color: #0F270F;
+}
+
+header {
+    padding: 2em 2em 0.1em 2em;
+    font-size: 2.3em;
+    background-color: #3E4533;
+}
+
+
+.header-top {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+
+.div_busca {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 1.8em;
+    border-radius: 0.9375em;
+    background-color: #fff;
+}
+
+.div_busca input {
+    width: 100%;
+    border: none;
+    border-radius: 1.25em;
+    outline: none;
+    padding: 0 0.62em;
+    color: #333;
+} 
+
+.div_busca img {
+    height: 1.2em;
+    margin-right: 0.62em;
+}
+
+
+#input-text:focus {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+
+::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+.nav_header_2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.opcoes_nav {
+    display: flex;
+    gap: 2em;
+    list-style: none;
+}
+
+.icons_nav {
+    display: flex;
+    gap: 1em;
+}
+
+
+
+.breadcrumbs {
+    color: #0F270F;
+}
+
+.breadcrumbs span {
+    color: #859479;
+}
+
+.info-breadcrumbs {
+    padding-left: 2em;
+    padding-top: 1em;
+}
+
+.titulo-font-marcellus {
+    font-family: 'Marcellus SC', serif;
+    margin-bottom: 50px;
+    color: #0F270F;
+    border-left: 5px solid #859479;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+.icons-nav {
+    display: flex;
+    gap: 2em;
+}
+
+.icons-nav #img_perfil {
+    width: 1.4em;
+}
+
+.icons-nav #img_sino {
+  width: 1.2em;
+}
+
+.icons-nav #img_cart {
+    width: 1.5em;
+}
+
+.container {
+    display: flex;
+    margin: 1em 1.5em;
+    font-size: 22px;
+}
+
+.container section {
+    background-color: #FFFAF7;
+    margin: 0.4em;
+
+}
+
+main span, h4, h5 {
+    color: #000000;
+}
+
+#perfil {
+    padding: 1em;
+}
+
+#perfil-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#perfil-top img {
+    width: 10rem;
+}
+
+#perfil-center {
+    display: flex;
+    flex-direction: column;
+}
+
+#perfil-center span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.5em;
+}
+
+#perfil-center span img {
+    width: 25px;
+    display: flex;
+}
+
+#perfil-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5em;
+    cursor: pointer;
+}
+
+.ver-mais {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    font-size: 0.7em;
+    margin-top: 0.4rem;
+}
+
+.ver-mais img {
+    width: 1%;
+    margin-left: 1%;
+}
+
+#gerenciamento-roteiros {
+    grid-area: GerenciamentodeRoteiros; 
+    padding: 0.4em 0.7em;
+    width: 29em;
+}
+
+
+#gerenciamento-roteiros h3 {
+    margin-bottom: 0.8em;
+    color: #000000;
+}
+
+#gerenciamento-roteiros #row-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8em;
+}
+
+#gerenciamento-roteiros #row-2 li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gerenciamento-roteiros #row-2 img{
+    width: 2em;
+}
+
+#gerenciamento-roteiros #itens {
+    background-color: rgba(133, 148, 121, 0.212);
+    padding: 0.5em 0.8em;
+    box-shadow: 0em 0.2em 0.4em rgba(0, 0, 0, 0.3);
+}
+
+#gerenciamento-roteiros aside {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    position: static;
+}
+
+#gerenciamento-roteiros aside span {
+    font-size: 0.8em;
+    margin-top: 0;
+    margin-right: 50px;
+    position: static;
+}
+
+#gerenciamento-roteiros aside img {
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#gerenciamento-roteiros #itens aside span img {
+    width: 10%;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.buttons h4{
+    color: #FFFFFF; 
+}
+
+.buttons #button-visualizar, #button-editar{
+    background-color: #3E4533;
+    border-radius: 2em;
+    line-height: 2.0;
+    padding: 0 10px;
+    border: 0;
+}
+
+#button-adicionar_roteiro {
+    all: unset;
+    
+    background-color: #000000;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4%;
+    border-radius: 2em;
+    padding: 0.1rem;
+    
+    width: 60%;
+}
+
+
+
+#button-adicionar_roteiro h3 {
+    color: #FFFFFF;
+    text-align: center;
+    margin-left: 8%;
+    justify-content: center;
+    align-items: center;
+}
+
+#button-adicionar_roteiro img {
+    align-items: center;
+}
+
+.container-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+#roteiros-catalogados {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    border: 4px solid #FFFF;
+    background-color: #FFFF;
+}
+
+#roteiros-catalogados div {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1em;
+    font-size: 13px;
+    flex-direction: row;
+}
+
+#roteiros-catalogados div li {
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+}
+
+#roteiros-catalogados img {
+    width: 6rem;
+    height: 6rem;
+}
+
+.container_cards {
+   display: flex;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 1em;
+   flex-direction: column;
+}
+
+.container_cards h3 {
+    font-weight: 600;
+    color: hsl(0, 0%, 0%);
+    width: 80%;
+    flex-direction: column;
+    margin: 0.1em;
+    text-align: start;
+    padding-left: 0.3em;
+}
+
+.container_cards span img {
+    display: flex;
+    text-align: start;
+    flex-direction: row;
+    background-color: #859479;
+    
+}
+
+.container_cards span h4{
+    background-color: #859479;
+    margin-left: 15px;
+    
+}
+
+.card_roteiro {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    border: 4px solid #FFFF;
+    background-color: #FFFF;
+}
+
+.card_roteiro img {
+    width: 80%;
+}
+
+
+.card_roteiro p {
+    margin-top: -1.5em;
+    background-color: #000000;
+    width: 80%;
+    text-align: start;
+    padding-left: 0.3em;
+
+    font-weight: 300;
+    color: #FFFBFB;
+    font-size: 15px;
+}
+
+.card_roteiro div {
+    margin-bottom: 0.6em;
+}
+
+.card_roteiro > span {
+    width: 80%;
+    padding: 1em;
+    font-size: 15px;
+}
+
+.bold {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.card_roteiro div > img{
+    height: 1.8em;
+    width: 2em;
+}
+
+.info_card {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-left: 0.1em;
+    font-size: 1.2em;
+
+}
+
+.button #button-saiba-mais {
+    background-color: #3E4533;
+    border-radius: 2em;
+    line-height: 2.0;
+    padding: 0 10px;
+    border: 0;
+}
+
+.button h4 {
+    color: #FFFFFF;
+}
+
+
+#itens aside h6 {
+    color: #000000;
+}
+
+.titulo {
+    font-size: 1em; 
+    margin-bottom: 10px; 
+    font-weight: bold; 
+}
+
+#itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em 0.8em;
+
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+.box-produtos{
+    display: flex;
+    flex-direction: column;
+    /*padding-left: 2em;*/
+    height: 36vh;
+    width: 73%;
+    height: 1770px;
+ 
+}
+
+.img-wrapper img{
+    width: 70%;
+}
+
+.text-wrapper h5  {
+    background-color: #46622D;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.text-wrapper span img{
+   padding-right: 1em;
+}
+
+p{
+    margin-bottom: 2em;
+    margin-top: 0;
+    font-size: 10px;
+}
+
+
+#button-saiba-mais h4{
+    background-color: #3E4533;
+    margin: 1%;
+    padding: 0.2rem;
+    border-radius: 2em;
+    border-color: rgba(133, 148, 121, 0.212);
+    width: 30%;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+footer li {
+    color: #FFFAF7;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    left: 0;
+    right: 0;
+
+    text-align: center;
+    font-style: normal;
+}
+
+footer > div {
+    font-family: "Marcellus SC", serif;
+    font-weight: 400;
+}
+
+footer section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+footer .left div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.62em;
+}
+
+footer .right img {
+    margin: 0.31em 1.25em 0;
+}
+
+footer .margin_top {
+    margin-top: 1.2em;
+}
+
+
+@media (min-width: 1500px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1335px) {
+
+    .container {
+        font-size: 16px;
+    }
+
+    .container-1 {
+        justify-content: flex-start;
+    }
+
+    .breadcrumbs {
+        font-size: 16px;
+    }
+
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #button-adicionar-roteiro {
+        margin: 2%;
+        width: 40%;
+    }
+
+    #roteiros-catalogados, #servicos-parceiros {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #perfil {
+        width: 90%;
+    }
+
+    #perfil-responsivo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .container-1 {
+        display: block;
+    }
+}
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Parceiro - Nós na trilha</title>
+    <link rel="stylesheet" href="../../components/every_pages.css">
+    <link rel="stylesheet" href="estiloColaborador.css">
+    
+  <!-- Importação dos arquivos CSS do Slick carousel -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+  <!-- Importação do jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <link rel="shortcut icon" href="../../components/images/favicon-2.png" type="image/x-icon">
+
+</head>
+<body>
+    <main>
+        <div class="info-breadcrumbs">
+            <span class="breadcrumbs">
+                <a href="#" id="pagina-administrador">
+                    Página do Administrador |
+                </a>
+                <span> Cadastro de Parceiro</span></span>    
+        </div>
+    	<section class="box-central">
+    		<div class="box-cards">
+	    		<div class="card-form-vendedor">
+	    			<h3>Cadastro do Parceiro</h3>
+	    			<form class="form" id="form_cadastro">
+	    				<div class="box_dados">
+                                <label>Nome/Razão Social da empresa
+                                    <input class="input" type="text" id="nameInput">
+                                </label>
+                                <label>Email
+                                    <input class="input" type="email" id="emailInput">
+                                </label>
+                                <label>
+                                    Telefone
+                                    <input class="input" type="text" id="phoneInput">
+                                </label>
+	    				</div>
+                        <h3>Endereço</h3>
+	    				<div class="box_dados">
+                            <div>
+                                <label>
+                                    CEP
+                                    <input class="input" type="text" id="cepInput" />
+                                </label>
+                                <label>
+                                    UF
+                                    <input class="input" type="text" id="ufInput"/>
+                                </label>
+                                <label>
+                                    Cidade
+                                    <input class="input" type="text" id="cidadeInput"/>
+                                </label>
+                            </div>
+                            <label>
+                                Rua
+                                <input class="input" type="text" id="ruaInput"/>
+                            </label>
+                            <label>
+                                Bairro
+                                <input class="input" type="text" id="bairroInput"/>
+                            </label>
+                            <label>
+                                Complemento
+                                <input class="input" type="text" id="complementoInput"/>
+                            </label>
+                            <label>
+                                Número
+                                <input class="input input-line-small" type="text" id="numeroInput"/>
+                            </label>
+                        </div>
+                        <div>
+                            <h3>Sobre a Empresa</h3>
+                            <div class="form-sobre">
+                                <label>CNPJ / MEI</label>
+                                <input class="input" type="text" id="identificadorInput">
+                                <div class="box_opcoes">
+                                    <span>Qual o porte da sua empresa?</span>
+                                    <select class="opcoes" id="porte">
+                                        <option value="1">Pequeno</option>
+                                        <option value="2">Médio</option>
+                                        <option value="3">Grande</option>
+                                    </select>
+                                </div>
+                                <div class="box_opcoes">
+                                    <span>Escolha seu plano de assinatura</span>
+                                    <select class="opcoes" id="planoAssinatura">
+                                        <option>Simples</option>
+                                        <option>Silver</option>
+                                        <option>Gold</option>
+                                    </select>
+                                </div>
+                                <label>Senha</label>
+                                <input class="input" type="password" name="">
+                                <label>Confirmar senha</label>
+                                <input class="input" type="password" name="" id="senhaInput">
+                            </div>
+                        </div>
+                        <div id="btn_cadastrar">
+                            <input type="submit" name="" value="Cadastrar">
+                        </div>
+                        <div id="dados_login">
+                            <h3>Dados de primeiro acesso do parceiro:</h3>
+                        </div>
+	    			</form>
+
+		    		<div class="clear"></div><!-- Limpeza da fltuação -->
+	    		</div>
+    		</div>
+    	</section>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>
