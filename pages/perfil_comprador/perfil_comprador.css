@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    margin: 1em 1.5em;
+    font-size: 22px;
+}
+
+.container section {
+    background-color: #FFFAF7;
+    margin: 0.4em;
+}
+
+main span, h4, h5 {
+    color: #000000;
+}
+
+#perfil {
+    padding: 1em;
+}
+
+#perfil-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#perfil-top img {
+    width: 10rem;
+}
+
+#perfil-center {
+    display: flex;
+    flex-direction: column;
+}
+
+#perfil-center span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.5em;
+}
+
+#perfil-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5em;
+}

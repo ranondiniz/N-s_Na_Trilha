@@ -94,6 +94,22 @@ header, footer {
     width: 1.5em;
 }
 
+/* BREADCRUMBS */
+
+.breadcrumbs {
+    color: #0F270F;
+}
+
+.breadcrumbs span {
+    color: #859479;
+}
+
+.info-breadcrumbs {
+    padding-left: 2em;
+    padding-top: 1em;
+    font-size: 1.5em;
+} 
+
 /*MODAIS DE LOGIN*/
 
 .fundo-modal{
