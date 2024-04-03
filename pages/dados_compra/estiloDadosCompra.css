@@ -1,0 +1,131 @@
+.box-centro-dados{
+    width: 70%;
+    background-color: #FFFAF7;
+    margin: 0 auto;
+}
+
+.titulo{
+    color: #859479;
+    text-align: center;
+    font-weight: normal;
+}
+
+.pagamentos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pagamentos label{
+    color: black;
+    font-weight: bold;
+}
+
+.box-exemplos{
+    margin: 1em 0.5em;
+}
+
+.box-dados{
+    width: 80%;
+    margin: 0 auto; 
+    
+}
+
+form{
+    border: 1px solid #bbbbbb;
+}
+
+.form-centro label{
+    color: black;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.form-centro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.form-line{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 1em;
+}
+.row{
+    display: flex;
+    flex-direction: row; 
+}
+
+.form-line input{
+    width: 240px;
+    height: 25px;
+    color: black;
+    padding-left: 1em;
+    border: 1px solid #bbbbbb;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+
+.form-line .input-100{
+    width: 160px;
+    margin-right: 2em;
+}
+
+.form-line .input-50{
+    width: 50px;
+}
+
+.box-roteiro h3, .box-endereco span{
+    color: black;
+    
+    font-size: 16px;
+}
+
+.box-roteiro{
+    margin-top: 1.5em;
+}
+
+.roteiro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box-roteiro span{
+    width: 30%;
+    margin-top: 0.5em;
+}
+
+.box-roteiro button{
+    width: 20%;
+    height: 30px;
+    background-color: #0F270F;
+    border: none;
+    cursor: pointer;
+    margin-left: 1em;
+    color: #FFFAF7;
+}
+
+.sobre-submit{
+    background-color: #0F270F;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 2%;
+    float: right;
+    border-top-left-radius: 50px;
+    color: #FFFAF7;
+}
+
+.box-endereco h3 {
+    font-weight: bold;
+}
+
+.clear{
+    clear: both;
+}
+

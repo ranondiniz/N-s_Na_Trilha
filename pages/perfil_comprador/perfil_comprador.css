@@ -46,3 +46,91 @@ main span, h4, h5 {
     justify-content: space-between;
     margin-top: 1.5em;
 }
+
+#meus-roteiros {
+    /* grid-area: MeusRot;  */
+    padding: 0.4em 0.7em;
+    width: 30em;
+}
+
+#meus-roteiros h4 {
+    margin-bottom: 0.8em;
+}
+
+#meus-roteiros #title_roteiros {
+    display: flex;
+    justify-content: space-between;
+
+    #ver-tudo {
+        font-size: 0.8em;
+    }
+}
+
+#meus-roteiros #info_roteiros {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8em;
+}
+
+#meus-roteiros #info_roteiros li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#meus-roteiros #info_roteiros img{
+    width: 2em;
+}
+
+#meus-roteiros #itens {
+    background-color: rgba(133, 148, 121, 0.212);
+    padding: 0.5em 0.8em;
+    box-shadow: 0em 0.2em 0.4em rgba(0, 0, 0, 0.3);
+}
+
+#meus-roteiros aside {
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ultimo_roteiro {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    background-color: #8594793b;
+    padding: 1.5em;
+
+    #img_roteiro {
+        height: 100px;
+    }
+
+    #info_roteiro {
+        font-size: 0.7em;
+    }
+
+    #botoes_roteiro {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    #botoes_roteiro button {
+        padding: 10px 30px;
+        border: 0;
+        border-radius: 20px;
+    }
+    
+    #botoes_roteiro button:first-of-type {
+        cursor: pointer;
+        background-color: #556C3E;
+        color: #FFFFFF;
+    }
+
+    #botoes_roteiro button:nth-of-type(2) {
+        background-color: #FFE600;
+        font-weight: 600;
+    }
+}
