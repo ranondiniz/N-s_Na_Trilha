@@ -100,10 +100,10 @@ header, footer {
     cursor: pointer;
 }
 
-a {
+.breadcrumbs a {
     text-decoration: none;
     color: #0F270F;
-}
+} 
 
 .breadcrumbs span {
     color: #859479;
