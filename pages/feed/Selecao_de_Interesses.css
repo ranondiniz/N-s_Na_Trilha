@@ -1,0 +1,955 @@
+.FEED {
+  background-color: #dcd5d1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.FEED .div {
+  background-color: #dcd5d1;
+  overflow: hidden;
+  width: 1527px;
+  height: 3372px;
+  position: relative;
+}
+
+.FEED .overlap {
+  position: absolute;
+  width: 1532px;
+  height: 777px;
+  top: -12845px;
+  left: 1664px;
+  background-image: url(./img/cabacalho.svg);
+  background-size: 100% 100%;
+}
+
+.FEED .paleta-de-cores {
+  position: absolute;
+  width: 255px;
+  height: 76px;
+  top: 113px;
+  left: 33px;
+}
+
+.FEED .overlap-group {
+  position: absolute;
+  width: 1535px;
+  height: 2959px;
+  top: -7px;
+  left: 0;
+}
+
+.FEED .overlap-2 {
+  position: absolute;
+  width: 1535px;
+  height: 2959px;
+  top: 0;
+  left: 0;
+}
+
+.FEED .overlap-3 {
+  position: absolute;
+  width: 1535px;
+  height: 2386px;
+  top: 0;
+  left: 0;
+}
+
+.FEED .carrossel {
+  position: absolute;
+  width: 1525px;
+  height: 632px;
+  top: 261px;
+  left: 0;
+  object-fit: cover;
+}
+
+.FEED .group {
+  position: absolute;
+  width: 32px;
+  height: 126px;
+  top: 491px;
+  left: 1468px;
+}
+
+.FEED .img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 47px;
+  left: -4px;
+}
+
+.FEED .group-2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 94px;
+  left: -4px;
+}
+
+.FEED .group-3 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: -4px;
+}
+
+.FEED .frame {
+  display: flex;
+  flex-direction: column;
+  width: 1331px;
+  align-items: flex-start;
+  gap: 32px;
+  position: absolute;
+  top: 1123px;
+  left: 82px;
+}
+
+.FEED .frame-2 {
+  position: relative;
+  width: 1331px;
+  height: 125px;
+  background-color: #3737374c;
+}
+
+.FEED .frame-wrapper {
+  display: flex;
+  width: 408px;
+  align-items: center;
+  gap: 16px;
+  padding: 0px 8px;
+  position: absolute;
+  top: 44px;
+  left: 161px;
+}
+
+.FEED .frame-3 {
+  display: flex;
+  width: 408px;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  margin-right: -16px;
+}
+
+.FEED .div-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  height: 42px;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.FEED .frame-4 {
+  display: inline-flex;
+  align-items: center;
+  gap: 75px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-bottom: -36px;
+}
+
+.FEED .frame-5 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.FEED .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Quicksand-SemiBold", Helvetica;
+  font-size: 19.2px;
+  letter-spacing: 0.1px;
+  line-height: 35px;
+  font-weight: 600;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.FEED .frame-6 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.FEED .frame-7 {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.FEED .frame-8 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.FEED .vector {
+  top: 64px;
+  position: absolute;
+  width: 18px;
+  height: 4px;
+  left: 1287px;
+}
+
+.FEED .image {
+  position: absolute;
+  width: 139px;
+  height: 99px;
+  top: 14px;
+  left: 14px;
+  object-fit: cover;
+}
+
+.FEED .frame-9 {
+  display: flex;
+  width: 408px;
+  align-items: center;
+  gap: 16px;
+  padding: 0px 8px;
+  position: absolute;
+  top: 13px;
+  left: 6px;
+}
+
+.FEED .image-2 {
+  position: relative;
+  width: 141px;
+  height: 103px;
+  object-fit: cover;
+}
+
+.FEED .frame-10 {
+  margin-right: -325px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.FEED .frame-11 {
+  display: inline-flex;
+  align-items: center;
+  gap: 75px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.FEED .vector-2 {
+  top: 61px;
+  position: absolute;
+  width: 18px;
+  height: 4px;
+  left: 1287px;
+}
+
+.FEED .image-3 {
+  position: relative;
+  width: 139px;
+  height: 102px;
+  object-fit: cover;
+}
+
+.FEED .frame-12 {
+  margin-right: -447px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.FEED .frame-13 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 57px;
+  left: 1286px;
+}
+
+.FEED .frame-14 {
+  display: flex;
+  flex-direction: column;
+  width: 1331px;
+  align-items: flex-start;
+  gap: 32px;
+  position: absolute;
+  top: 1772px;
+  left: 87px;
+}
+
+.FEED .image-4 {
+  position: relative;
+  width: 139px;
+  height: 99px;
+  object-fit: cover;
+}
+
+.FEED .frame-15 {
+  margin-right: -352px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.FEED .frame-16 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 51px;
+  left: 1287px;
+}
+
+.FEED .image-5 {
+  position: relative;
+  width: 139px;
+  height: 98px;
+  object-fit: cover;
+}
+
+.FEED .frame-17 {
+  margin-right: -45px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.FEED .frame-18 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 51px;
+  left: 1283px;
+}
+
+.FEED .image-6 {
+  position: relative;
+  width: 139px;
+  height: 104px;
+  object-fit: cover;
+}
+
+.FEED .frame-19 {
+  margin-right: -446px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.FEED .frame-20 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 47px;
+  left: 1281px;
+}
+
+.FEED .group-4 {
+  position: absolute;
+  width: 942px;
+  height: 1444px;
+  top: 942px;
+  left: 87px;
+}
+
+.FEED .text-wrapper-2 {
+  position: absolute;
+  width: 517px;
+  height: 20px;
+  top: 0;
+  left: 417px;
+  font-family: "Roboto-CondensedSemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.FEED .text-wrapper-3 {
+  position: absolute;
+  width: 438px;
+  height: 20px;
+  top: 771px;
+  left: 0;
+  font-family: "Roboto-CondensedSemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.FEED .text-wrapper-4 {
+  position: absolute;
+  width: 438px;
+  height: 20px;
+  top: 1424px;
+  left: 8px;
+  font-family: "Roboto-CondensedSemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.FEED .text-wrapper-5 {
+  position: absolute;
+  width: 438px;
+  height: 20px;
+  top: 122px;
+  left: 0;
+  font-family: "Roboto-CondensedSemiBold", Helvetica;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  font-weight: 600;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.FEED .element {
+  left: 368px;
+  position: absolute;
+  width: 157px;
+  height: 157px;
+  top: 873px;
+  object-fit: cover;
+}
+
+.FEED .element-c-ad-cd {
+  left: 972px;
+  position: absolute;
+  width: 157px;
+  height: 157px;
+  top: 873px;
+  object-fit: cover;
+}
+
+.FEED .overlap-wrapper {
+  position: absolute;
+  width: 1535px;
+  height: 282px;
+  top: 0;
+  left: 0;
+}
+
+.FEED .overlap-4 {
+  position: relative;
+  width: 1527px;
+  height: 282px;
+}
+
+.FEED .rectangle {
+  position: absolute;
+  width: 1527px;
+  height: 268px;
+  top: 0;
+  left: 0;
+  background-color: #3e4533;
+}
+
+.FEED .icon-cart {
+  position: absolute;
+  width: 57px;
+  height: 36px;
+  top: 154px;
+  left: 1407px;
+}
+
+.FEED .group-5 {
+  position: absolute;
+  width: 839px;
+  height: 25px;
+  top: 165px;
+  left: 376px;
+}
+
+.FEED .text-wrapper-6 {
+  position: absolute;
+  width: 86px;
+  height: 23px;
+  top: 0;
+  left: 0;
+  font-family: "Scada-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.FEED .overlap-group-2 {
+  position: absolute;
+  width: 369px;
+  height: 24px;
+  top: 0;
+  left: 86px;
+}
+
+.FEED .text-wrapper-7 {
+  position: absolute;
+  width: 195px;
+  height: 23px;
+  top: 1px;
+  left: 0;
+  font-family: "Scada-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.FEED .text-wrapper-8 {
+  position: absolute;
+  width: 198px;
+  height: 23px;
+  top: 0;
+  left: 171px;
+  font-family: "Scada-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.FEED .text-wrapper-9 {
+  position: absolute;
+  width: 119px;
+  height: 23px;
+  top: 2px;
+  left: 710px;
+  font-family: "Scada-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.FEED .text-wrapper-10 {
+  position: absolute;
+  width: 207px;
+  height: 23px;
+  top: 2px;
+  left: 469px;
+  font-family: "Scada-Regular", Helvetica;
+  font-weight: 400;
+  color: #fffafa;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.FEED .icon-person {
+  position: absolute;
+  width: 39px;
+  height: 36px;
+  top: 154px;
+  left: 1285px;
+}
+
+.FEED .icon-bell {
+  position: absolute;
+  width: 39px;
+  height: 26px;
+  top: 162px;
+  left: 1346px;
+}
+
+.FEED .text-wrapper-11 {
+  position: absolute;
+  width: 315px;
+  height: 23px;
+  top: 43px;
+  left: 37px;
+  font-family: "Scada-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.FEED .text-wrapper-12 {
+  position: absolute;
+  width: 151px;
+  height: 23px;
+  top: 43px;
+  left: 1339px;
+  font-family: "Scada-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.FEED .text-wrapper-13 {
+  position: absolute;
+  width: 237px;
+  height: 23px;
+  top: 43px;
+  left: 366px;
+  font-family: "Scada-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.FEED .rectangle-2 {
+  position: absolute;
+  width: 531px;
+  height: 63px;
+  top: 27px;
+  left: 623px;
+}
+
+.FEED .lupa {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: 35px;
+  left: 1101px;
+  object-fit: cover;
+}
+
+.FEED .text-wrapper-14 {
+  position: absolute;
+  width: 151px;
+  height: 23px;
+  top: 43px;
+  left: 1168px;
+  font-family: "Scada-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.FEED .bcaf {
+  position: absolute;
+  width: 234px;
+  height: 234px;
+  top: 48px;
+  left: 77px;
+  object-fit: cover;
+}
+
+.FEED .line {
+  position: absolute;
+  width: 12px;
+  height: 2027px;
+  top: 932px;
+  left: 1496px;
+}
+
+.FEED .frame-21 {
+  display: flex;
+  flex-direction: column;
+  width: 1331px;
+  align-items: flex-start;
+  gap: 32px;
+  position: absolute;
+  top: 2422px;
+  left: 93px;
+}
+
+.FEED .image-7 {
+  position: relative;
+  width: 137px;
+  height: 103px;
+  object-fit: cover;
+}
+
+.FEED .frame-22 {
+  margin-right: -329px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.FEED .image-8 {
+  position: relative;
+  width: 138px;
+  height: 102px;
+  object-fit: cover;
+}
+
+.FEED .frame-23 {
+  margin-right: -19px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.FEED .frame-24 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 47px;
+  left: 1279px;
+}
+
+.FEED .image-9 {
+  position: relative;
+  width: 139px;
+  height: 103px;
+  object-fit: cover;
+}
+
+.FEED .frame-25 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 51px;
+  left: 1285px;
+}
+
+.FEED .group-wrapper {
+  position: absolute;
+  width: 1531px;
+  height: 398px;
+  top: 2974px;
+  left: 0;
+  background-color: #3e4533;
+}
+
+.FEED .group-6 {
+  position: relative;
+  width: 1273px;
+  height: 314px;
+  top: 51px;
+  left: 133px;
+}
+
+.FEED .overlap-5 {
+  position: absolute;
+  width: 810px;
+  height: 20px;
+  top: 0;
+  left: 227px;
+}
+
+.FEED .p {
+  position: absolute;
+  width: 810px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  font-family: "Marcellus SC-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 33px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.FEED .rua-das-colhetas {
+  position: absolute;
+  width: 629px;
+  height: 93px;
+  top: 86px;
+  left: 0;
+  font-family: "Scada-Regular", Helvetica;
+  font-weight: 400;
+  color: #fffafa;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.FEED .facebook-wrapper {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 140px;
+  left: 914px;
+  background-image: url(./img/facebook-1-2.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.FEED .img-2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.FEED .whatsapp-wrapper {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 140px;
+  left: 1144px;
+  background-image: url(./img/whatsapp-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.FEED .twitter-wrapper {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 209px;
+  left: 1029px;
+  background-image: url(./img/twitter-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.FEED .youtube-wrapper {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 209px;
+  left: 1144px;
+  background-image: url(./img/youtube-1-2.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.FEED .instagram-wrapper {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 140px;
+  left: 1029px;
+  background-image: url(./img/image.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.FEED .logotipo-do-wrapper {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 212px;
+  left: 914px;
+  background-image: url(./img/logotipo-do-pinterest-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.FEED .n-s-NA-TRILHA {
+  position: absolute;
+  width: 629px;
+  height: 65px;
+  top: 234px;
+  left: 0;
+  font-family: "Scada-Regular", Helvetica;
+  font-weight: 400;
+  color: #fffafa;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.FEED .overlap-6 {
+  position: absolute;
+  width: 410px;
+  height: 26px;
+  top: 87px;
+  left: 849px;
+}
+
+.FEED .text-wrapper-15 {
+  position: absolute;
+  width: 410px;
+  height: 26px;
+  top: 0;
+  left: 0;
+  font-family: "Scada-Regular", Helvetica;
+  font-weight: 400;
+  color: #fffafa;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.FEED .text-wrapper-16 {
+  position: absolute;
+  width: 345px;
+  height: 25px;
+  top: 289px;
+  left: 881px;
+  font-family: "Scada-Regular", Helvetica;
+  font-weight: 400;
+  color: #fffafa;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.FEED .line-2 {
+  position: absolute;
+  width: 41px;
+  height: 1px;
+  top: -8879px;
+  left: 1763px;
+}
