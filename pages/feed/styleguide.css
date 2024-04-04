@@ -1,0 +1,24 @@
+:root {
+  --platform-aliasesttulos: rgba(225, 225, 230, 1);
+  --platform-aliasestextos-apoio: rgba(141, 141, 153, 1);
+  --platform-aliasestexto-base: rgba(196, 196, 204, 1);
+  --platform-aliasesshape-secundria: rgba(41, 41, 46, 1);
+  --text-sm-font-family: "Roboto", Helvetica;
+  --text-sm-font-weight: 400;
+  --text-sm-font-size: 14px;
+  --text-sm-letter-spacing: 0px;
+  --text-sm-line-height: 160.0000023841858%;
+  --text-sm-font-style: normal;
+  --text-xs-font-family: "Roboto", Helvetica;
+  --text-xs-font-weight: 400;
+  --text-xs-font-size: 12px;
+  --text-xs-letter-spacing: 0px;
+  --text-xs-line-height: 160.0000023841858%;
+  --text-xs-font-style: normal;
+  --text-md-font-family: "Roboto", Helvetica;
+  --text-md-font-weight: 400;
+  --text-md-font-size: 16px;
+  --text-md-letter-spacing: 0px;
+  --text-md-line-height: 160.0000023841858%;
+  --text-md-font-style: normal;
+}
