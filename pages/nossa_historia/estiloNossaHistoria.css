@@ -1,0 +1,80 @@
+.info-breadcrumbs {
+    padding-left: 2em;
+    padding-top: 0em !important;
+}
+
+#titulo-nh {
+    font-family: 'Marcellus SC', serif;
+    margin-bottom: 50px;
+    color: #0F270F;
+    border-left: 4px solid #859479;
+    padding-left: 3px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+.divisao-bloco {
+    padding-top: 0.75em;
+    padding-bottom: 80px;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.titulo-bloco-info {
+    font-family: 'Marcellus', serif;
+}
+
+.bloco-info-nh {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+
+.bloco-info-nh p {
+    font-size: 22px;
+    
+}
+
+.bloco-info-nh p, .bloco-info-nh h3 {
+    color: #0F270F;
+    font-weight: 400;
+}
+
+#texto-bloco-info-1 {
+    display: flex;
+    flex-direction: column;
+    width: 43.5%;
+    text-align: left;
+    
+}
+
+#texto-bloco-info-2 {
+    display: flex;
+    flex-direction: column;
+    width: 43.5%;
+    text-align: right;
+}
+
+#texto-bloco-info-3 {
+    display: flex;
+    flex-direction: column;
+    width: 43.5%;
+    text-align: left;
+}
+
+.imagem-bloco-info {
+    max-width: 30%;
+    max-height: 30%;
+    width: auto;
+    height: auto;
+}
+
+.titulo-bloco-info{
+    font-size: 1.5em;
+}
+
+.responsivo{
+    display: none;
+}

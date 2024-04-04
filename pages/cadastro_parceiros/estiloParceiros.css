@@ -1,0 +1,166 @@
+.box-central{
+    padding: 1em 2em;
+}
+
+.box-cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-info-parceiros{
+    margin-top: 1em;
+    width: 50%;
+}
+
+.card-info-parceiros img{
+    width: 100%;
+}
+
+.card-form-parceiros{
+    margin-top: 1em;
+    width: 50%;
+    background-color: white;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+.form label, span {
+    font-weight: 600;
+}
+
+.card-form-parceiros form label{
+    display: block;
+    color: black;
+    margin-top: 1em;
+}
+
+.title_personalizado {
+    font-size: 1.5em;
+    color: #616e57;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+.form-line{
+    display: flex;  
+    gap: 14px;
+    width: 100%;
+}
+
+
+.input {
+    height: 33px;
+    color: black;
+    width: 100%;
+    border: 1px solid rgb(153, 153, 132);
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+.input:focus {
+    box-shadow: 0 0 0 1px #598a64;
+    outline: none;
+}
+
+.small {
+}
+
+#opcoes {
+    height: 40px;
+    border: none;
+    font-size: 1em;
+    border-radius: 20px;
+    background-color: #859479;
+
+    margin: 0.5em 0 1.5em 0;
+}
+
+.box-form-sobre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box_servicos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    margin-left: 0%;
+}
+
+#btn_enviar {
+    text-align: end;
+}
+
+#btn_enviar input {
+    background-color: #0F270F;
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-top-left-radius: 50px;
+    color: #ffffff;
+}
+
+.clear{
+    clear: both;
+}
+
+@media screen and (min-width: 1351px){
+    main section {
+        font-size: 21px;
+    }
+    .card-sobre-parceiros{
+        margin-top: 2em;
+        padding: 0 2em;
+        padding-top: 3em;
+    }
+
+    .box-form-sobre{
+        margin-bottom: 1.5em !important;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    main section{
+        font-size: 16px;
+    }
+
+    .card-info-parceiros{
+        margin: auto;
+        margin-top: 1em;
+        width: 65%;
+    }
+
+    .card-form-parceiros{
+        margin: auto;
+        margin-top: 1em;
+        width: 85%;
+    }
+    #input{
+        margin-bottom: 2em !important;
+    }
+
+    .box-form-sobre{
+        margin-bottom: 1.5em !important;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .card-form-parceiros{
+        margin: auto;
+        margin-top: 1em;
+        width: 100%;
+    }
+}
