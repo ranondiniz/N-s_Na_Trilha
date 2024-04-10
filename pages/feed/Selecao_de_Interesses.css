@@ -1,955 +1,269 @@
-.FEED {
-  background-color: #dcd5d1;
+/* CSS PADRÃO TODAS PÁGINAS */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Scada", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #F1E9E4;
+}
+
+header, footer {
+  background-color: #3E4533;
+  color: #FFFFFF;
+  font-size: 1.5625em;
+  padding-top: 0.9375em ;
+}
+
+header, footer {
+  span, li, img {
+      cursor: pointer;
+  }
+}
+
+/* HEADER */
+
+.nav_header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div_busca {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 1.8em;
+  border-radius: 0.9375em;
+  background-color: #fff;
+}
+
+
+.div_busca input {
   width: 100%;
+  border: none;
+  border-radius: 1.25em;
+  outline: none;
+  padding: 0 0.62em;
+  color: #333;
+} 
+
+.div_busca img {
+  height: 1.2em;
+  margin-right: 0.62em;
 }
 
-.FEED .div {
-  background-color: #dcd5d1;
-  overflow: hidden;
-  width: 1527px;
-  height: 3372px;
-  position: relative;
+.logo_principal {
+  height: 170px;
 }
 
-.FEED .overlap {
-  position: absolute;
-  width: 1532px;
-  height: 777px;
-  top: -12845px;
-  left: 1664px;
-  background-image: url(./img/cabacalho.svg);
-  background-size: 100% 100%;
-}
-
-.FEED .paleta-de-cores {
-  position: absolute;
-  width: 255px;
-  height: 76px;
-  top: 113px;
-  left: 33px;
-}
-
-.FEED .overlap-group {
-  position: absolute;
-  width: 1535px;
-  height: 2959px;
-  top: -7px;
-  left: 0;
-}
-
-.FEED .overlap-2 {
-  position: absolute;
-  width: 1535px;
-  height: 2959px;
-  top: 0;
-  left: 0;
-}
-
-.FEED .overlap-3 {
-  position: absolute;
-  width: 1535px;
-  height: 2386px;
-  top: 0;
-  left: 0;
-}
-
-.FEED .carrossel {
-  position: absolute;
-  width: 1525px;
-  height: 632px;
-  top: 261px;
-  left: 0;
-  object-fit: cover;
-}
-
-.FEED .group {
-  position: absolute;
-  width: 32px;
-  height: 126px;
-  top: 491px;
-  left: 1468px;
-}
-
-.FEED .img {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 47px;
-  left: -4px;
-}
-
-.FEED .group-2 {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 94px;
-  left: -4px;
-}
-
-.FEED .group-3 {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 0;
-  left: -4px;
-}
-
-.FEED .frame {
+.nav_header_2 {
   display: flex;
-  flex-direction: column;
-  width: 1331px;
-  align-items: flex-start;
-  gap: 32px;
-  position: absolute;
-  top: 1123px;
-  left: 82px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.FEED .frame-2 {
-  position: relative;
-  width: 1331px;
-  height: 125px;
-  background-color: #3737374c;
-}
-
-.FEED .frame-wrapper {
+.opcoes_nav {
   display: flex;
-  width: 408px;
-  align-items: center;
-  gap: 16px;
-  padding: 0px 8px;
-  position: absolute;
-  top: 44px;
-  left: 161px;
+  gap: 2em;
+  list-style: none;
 }
 
-.FEED .frame-3 {
+.icons_nav {
   display: flex;
-  width: 408px;
-  align-items: center;
-  gap: 16px;
-  position: relative;
-  margin-right: -16px;
+  gap: 1em;
 }
 
-.FEED .div-wrapper {
-  display: inline-flex;
-  flex-direction: column;
-  height: 42px;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-  flex: 0 0 auto;
+.icons_nav #img_perfil {
+  width: 1.4em;
 }
 
-.FEED .frame-4 {
-  display: inline-flex;
-  align-items: center;
-  gap: 75px;
-  position: relative;
-  flex: 0 0 auto;
-  margin-bottom: -36px;
+.icons_nav #img_sino {
+width: 1.2em;
 }
 
-.FEED .frame-5 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-  flex: 0 0 auto;
+.icons_nav #img_cart {
+  width: 1.5em;
 }
 
-.FEED .text-wrapper {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Quicksand-SemiBold", Helvetica;
-  font-size: 19.2px;
-  letter-spacing: 0.1px;
-  line-height: 35px;
-  font-weight: 600;
-  color: #000000;
-  white-space: nowrap;
+/* BREADCRUMBS */
+
+.breadcrumbs {
+  color: #0F270F;
+  cursor: pointer;
 }
 
-.FEED .frame-6 {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  position: relative;
-  flex: 0 0 auto;
+.breadcrumbs a {
+  text-decoration: none;
+  color: #0F270F;
+} 
+
+.breadcrumbs span {
+  color: #859479;
 }
 
-.FEED .frame-7 {
-  position: relative;
-  flex: 0 0 auto;
-}
+.info-breadcrumbs {
+  padding-left: 2em;
+  padding-top: 1em;
+  font-size: 1.5em;
+} 
 
-.FEED .frame-8 {
-  position: relative;
-  width: 24px;
-  height: 24px;
-}
+/*MODAIS DE LOGIN*/
 
-.FEED .vector {
-  top: 64px;
+.fundo-modal{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
   position: absolute;
-  width: 18px;
-  height: 4px;
-  left: 1287px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
 }
-
-.FEED .image {
+.modal{
+  width: 55%;
+  height: auto;
+  margin-top: 6%;
   position: absolute;
-  width: 139px;
-  height: 99px;
-  top: 14px;
-  left: 14px;
-  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
 }
 
-.FEED .frame-9 {
-  display: flex;
-  width: 408px;
-  align-items: center;
-  gap: 16px;
-  padding: 0px 8px;
-  position: absolute;
-  top: 13px;
-  left: 6px;
+.legenda{
+  padding: 2%;
+  visibility: v;
+  color: #FFFFFF;
 }
 
-.FEED .image-2 {
-  position: relative;
-  width: 141px;
-  height: 103px;
-  object-fit: cover;
-}
-
-.FEED .frame-10 {
-  margin-right: -325px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.FEED .frame-11 {
-  display: inline-flex;
-  align-items: center;
-  gap: 75px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.FEED .vector-2 {
-  top: 61px;
-  position: absolute;
-  width: 18px;
-  height: 4px;
-  left: 1287px;
-}
-
-.FEED .image-3 {
-  position: relative;
-  width: 139px;
-  height: 102px;
-  object-fit: cover;
-}
-
-.FEED .frame-12 {
-  margin-right: -447px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.FEED .frame-13 {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 57px;
-  left: 1286px;
-}
-
-.FEED .frame-14 {
-  display: flex;
-  flex-direction: column;
-  width: 1331px;
-  align-items: flex-start;
-  gap: 32px;
-  position: absolute;
-  top: 1772px;
-  left: 87px;
-}
-
-.FEED .image-4 {
-  position: relative;
-  width: 139px;
-  height: 99px;
-  object-fit: cover;
-}
-
-.FEED .frame-15 {
-  margin-right: -352px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.FEED .frame-16 {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 51px;
-  left: 1287px;
-}
-
-.FEED .image-5 {
-  position: relative;
-  width: 139px;
-  height: 98px;
-  object-fit: cover;
-}
-
-.FEED .frame-17 {
-  margin-right: -45px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.FEED .frame-18 {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 51px;
-  left: 1283px;
-}
-
-.FEED .image-6 {
-  position: relative;
-  width: 139px;
-  height: 104px;
-  object-fit: cover;
-}
-
-.FEED .frame-19 {
-  margin-right: -446px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.FEED .frame-20 {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 47px;
-  left: 1281px;
-}
-
-.FEED .group-4 {
-  position: absolute;
-  width: 942px;
-  height: 1444px;
-  top: 942px;
-  left: 87px;
-}
-
-.FEED .text-wrapper-2 {
-  position: absolute;
-  width: 517px;
-  height: 20px;
-  top: 0;
-  left: 417px;
-  font-family: "Roboto-CondensedSemiBold", Helvetica;
-  font-weight: 600;
-  color: #000000;
-  font-size: 40px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.FEED .text-wrapper-3 {
-  position: absolute;
-  width: 438px;
-  height: 20px;
-  top: 771px;
-  left: 0;
-  font-family: "Roboto-CondensedSemiBold", Helvetica;
-  font-weight: 600;
-  color: #000000;
-  font-size: 40px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.FEED .text-wrapper-4 {
-  position: absolute;
-  width: 438px;
-  height: 20px;
-  top: 1424px;
-  left: 8px;
-  font-family: "Roboto-CondensedSemiBold", Helvetica;
-  font-weight: 600;
-  color: #000000;
-  font-size: 40px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.FEED .text-wrapper-5 {
-  position: absolute;
-  width: 438px;
-  height: 20px;
-  top: 122px;
-  left: 0;
-  font-family: "Roboto-CondensedSemiBold", Helvetica;
-  font-size: 40px;
-  letter-spacing: 0;
-  line-height: normal;
-  font-weight: 600;
-  color: #000000;
-  white-space: nowrap;
-}
-
-.FEED .element {
-  left: 368px;
-  position: absolute;
-  width: 157px;
-  height: 157px;
-  top: 873px;
-  object-fit: cover;
-}
-
-.FEED .element-c-ad-cd {
-  left: 972px;
-  position: absolute;
-  width: 157px;
-  height: 157px;
-  top: 873px;
-  object-fit: cover;
-}
-
-.FEED .overlap-wrapper {
-  position: absolute;
-  width: 1535px;
-  height: 282px;
-  top: 0;
-  left: 0;
-}
-
-.FEED .overlap-4 {
-  position: relative;
-  width: 1527px;
-  height: 282px;
-}
-
-.FEED .rectangle {
-  position: absolute;
-  width: 1527px;
-  height: 268px;
-  top: 0;
-  left: 0;
-  background-color: #3e4533;
-}
-
-.FEED .icon-cart {
-  position: absolute;
-  width: 57px;
-  height: 36px;
-  top: 154px;
-  left: 1407px;
-}
-
-.FEED .group-5 {
-  position: absolute;
-  width: 839px;
-  height: 25px;
-  top: 165px;
-  left: 376px;
-}
-
-.FEED .text-wrapper-6 {
-  position: absolute;
-  width: 86px;
-  height: 23px;
-  top: 0;
-  left: 0;
-  font-family: "Scada-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 29px;
+.box-modal{
+  width: 100%;
   text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+  background-color: #DDD6D2;
+  border-radius: 10px;
 }
 
-.FEED .overlap-group-2 {
-  position: absolute;
-  width: 369px;
-  height: 24px;
-  top: 0;
-  left: 86px;
+.box-modal h3{
+  font-weight: normal;
+  color: #0F270F;
+  margin:  0;
 }
 
-.FEED .text-wrapper-7 {
-  position: absolute;
-  width: 195px;
-  height: 23px;
-  top: 1px;
-  left: 0;
-  font-family: "Scada-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 29px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+.text-modal{
+  color: #000000;
+  margin-bottom: 2%;
 }
 
-.FEED .text-wrapper-8 {
-  position: absolute;
-  width: 198px;
-  height: 23px;
-  top: 0;
-  left: 171px;
-  font-family: "Scada-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 29px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+.img-fechar{
+  width: 35px;
+  height: 35px;
+  float: right;
+  margin: 10px 10px 0 10px;
+  cursor: pointer;
 }
 
-.FEED .text-wrapper-9 {
-  position: absolute;
+.clear{
+  clear: both;
+}
+
+.img-google{
+  width: 253px;
+  margin: 2% 0;
+  cursor: pointer;
+}
+
+.input-login{
+  width: 384px;
+  height: 35px;
+  margin-bottom: 1%;
+  border-radius: 6px;
+  padding-left: 2%;
+  border: none;
+  color: black;
+}
+
+.link-ajuda{
+  width: 75%;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.text-red{
+  color: #9B2D25;
+  cursor: pointer;
+}
+
+.text-gray{
+  color: gray;
+  cursor: pointer;
+}
+
+.box-modal input[type='button']{
   width: 119px;
-  height: 23px;
-  top: 2px;
-  left: 710px;
-  font-family: "Scada-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 29px;
+  height: 35px;
+  background-color: #3E4533;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  border-radius: 17px;
+  margin: 2% 0;
+}
+
+/* FOOTER */
+
+footer {
+  left: 0;
+  right: 0;
+
   text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+  font-style: normal;
 }
 
-.FEED .text-wrapper-10 {
-  position: absolute;
-  width: 207px;
-  height: 23px;
-  top: 2px;
-  left: 469px;
-  font-family: "Scada-Regular", Helvetica;
+footer > div {
+  font-family: "Marcellus SC", serif;
   font-weight: 400;
-  color: #fffafa;
-  font-size: 29px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
 }
 
-.FEED .icon-person {
-  position: absolute;
-  width: 39px;
-  height: 36px;
-  top: 154px;
-  left: 1285px;
+footer section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.FEED .icon-bell {
-  position: absolute;
-  width: 39px;
-  height: 26px;
-  top: 162px;
-  left: 1346px;
-}
-
-.FEED .text-wrapper-11 {
-  position: absolute;
-  width: 315px;
-  height: 23px;
-  top: 43px;
-  left: 37px;
-  font-family: "Scada-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 29px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.FEED .text-wrapper-12 {
-  position: absolute;
-  width: 151px;
-  height: 23px;
-  top: 43px;
-  left: 1339px;
-  font-family: "Scada-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 29px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.FEED .text-wrapper-13 {
-  position: absolute;
-  width: 237px;
-  height: 23px;
-  top: 43px;
-  left: 366px;
-  font-family: "Scada-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 29px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.FEED .rectangle-2 {
-  position: absolute;
-  width: 531px;
-  height: 63px;
-  top: 27px;
-  left: 623px;
-}
-
-.FEED .lupa {
-  position: absolute;
-  width: 34px;
-  height: 34px;
-  top: 35px;
-  left: 1101px;
-  object-fit: cover;
-}
-
-.FEED .text-wrapper-14 {
-  position: absolute;
-  width: 151px;
-  height: 23px;
-  top: 43px;
-  left: 1168px;
-  font-family: "Scada-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 29px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.FEED .bcaf {
-  position: absolute;
-  width: 234px;
-  height: 234px;
-  top: 48px;
-  left: 77px;
-  object-fit: cover;
-}
-
-.FEED .line {
-  position: absolute;
-  width: 12px;
-  height: 2027px;
-  top: 932px;
-  left: 1496px;
-}
-
-.FEED .frame-21 {
+footer .left {
   display: flex;
   flex-direction: column;
-  width: 1331px;
-  align-items: flex-start;
-  gap: 32px;
-  position: absolute;
-  top: 2422px;
-  left: 93px;
+  align-items: center;
+  text-align: left;
 }
 
-.FEED .image-7 {
-  position: relative;
-  width: 137px;
-  height: 103px;
-  object-fit: cover;
-}
-
-.FEED .frame-22 {
-  margin-right: -329px;
-  display: inline-flex;
+footer .left div {
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-  flex: 0 0 auto;
+  padding-bottom: 0.62em;
 }
 
-.FEED .image-8 {
-  position: relative;
-  width: 138px;
-  height: 102px;
-  object-fit: cover;
+footer .right img {
+  margin: 0.31em 1.25em 0;
 }
 
-.FEED .frame-23 {
-  margin-right: -19px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-  flex: 0 0 auto;
+footer .margin_top {
+  margin-top: 1.2em;
 }
 
-.FEED .frame-24 {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 47px;
-  left: 1279px;
-}
 
-.FEED .image-9 {
-  position: relative;
-  width: 139px;
-  height: 103px;
-  object-fit: cover;
-}
-
-.FEED .frame-25 {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 51px;
-  left: 1285px;
-}
-
-.FEED .group-wrapper {
-  position: absolute;
-  width: 1531px;
-  height: 398px;
-  top: 2974px;
-  left: 0;
-  background-color: #3e4533;
-}
-
-.FEED .group-6 {
-  position: relative;
-  width: 1273px;
-  height: 314px;
-  top: 51px;
-  left: 133px;
-}
-
-.FEED .overlap-5 {
-  position: absolute;
-  width: 810px;
-  height: 20px;
-  top: 0;
-  left: 227px;
-}
-
-.FEED .p {
-  position: absolute;
-  width: 810px;
-  height: 20px;
-  top: 0;
-  left: 0;
-  font-family: "Marcellus SC-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 33px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.FEED .rua-das-colhetas {
-  position: absolute;
-  width: 629px;
-  height: 93px;
-  top: 86px;
-  left: 0;
-  font-family: "Scada-Regular", Helvetica;
-  font-weight: 400;
-  color: #fffafa;
-  font-size: 25px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.FEED .facebook-wrapper {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 140px;
-  left: 914px;
-  background-image: url(./img/facebook-1-2.png);
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.FEED .img-2 {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-}
-
-.FEED .whatsapp-wrapper {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 140px;
-  left: 1144px;
-  background-image: url(./img/whatsapp-1.png);
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.FEED .twitter-wrapper {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 209px;
-  left: 1029px;
-  background-image: url(./img/twitter-1.png);
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.FEED .youtube-wrapper {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 209px;
-  left: 1144px;
-  background-image: url(./img/youtube-1-2.png);
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.FEED .instagram-wrapper {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 140px;
-  left: 1029px;
-  background-image: url(./img/image.png);
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.FEED .logotipo-do-wrapper {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 212px;
-  left: 914px;
-  background-image: url(./img/logotipo-do-pinterest-1.png);
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.FEED .n-s-NA-TRILHA {
-  position: absolute;
-  width: 629px;
-  height: 65px;
-  top: 234px;
-  left: 0;
-  font-family: "Scada-Regular", Helvetica;
-  font-weight: 400;
-  color: #fffafa;
-  font-size: 25px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.FEED .overlap-6 {
-  position: absolute;
-  width: 410px;
-  height: 26px;
-  top: 87px;
-  left: 849px;
-}
-
-.FEED .text-wrapper-15 {
-  position: absolute;
-  width: 410px;
-  height: 26px;
-  top: 0;
-  left: 0;
-  font-family: "Scada-Regular", Helvetica;
-  font-weight: 400;
-  color: #fffafa;
-  font-size: 25px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.FEED .text-wrapper-16 {
-  position: absolute;
-  width: 345px;
-  height: 25px;
-  top: 289px;
-  left: 881px;
-  font-family: "Scada-Regular", Helvetica;
-  font-weight: 400;
-  color: #fffafa;
-  font-size: 25px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.FEED .line-2 {
-  position: absolute;
-  width: 41px;
-  height: 1px;
-  top: -8879px;
-  left: 1763px;
+@media (min-width: 1500px) {
+  body {
+      font-size: 18px;
+  }
 }
