@@ -1,0 +1,1240 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
+
+.box-central {
+  padding: 1em 1em;
+}
+
+.box-cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-info-roteiro {
+  margin-top: 1em;
+  width: 50%;
+}
+
+.card-form-roteiro {
+  align-items: center;
+  margin-top: 1em;
+  width: 100%;
+  background-color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+.card-form-roteiro h3 {
+  text-align: center;
+  color: black;
+  font-weight: normal;
+  margin-top: 1em;
+}
+
+.card-form-roteiro form label {
+  display: block;
+  color: black;
+  margin-top: 1em;
+}
+
+.form-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.box-form-line {
+  width: 100%;
+}
+
+.input {
+  height: 33px;
+  color: black;
+  width: 100%;
+}
+
+.input-line {
+  width: 95%;
+  margin-left: 5%;
+}
+
+.label-line {
+  margin-left: 5%;
+}
+
+.input-line-tall {
+  height: 33px;
+  color: black;
+  width: 140%;
+}
+
+.label-line-small {
+  margin-left: 50%;
+}
+
+.input-line-small {
+  width: 50%;
+  margin-left: 50%;
+}
+
+.sobre-submit {
+  background-color: #000000;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 2%;
+  float: right;
+  margin-top: 13em;
+  border-top-left-radius: 50px;
+  color: #ffffff;
+}
+.clear {
+  clear: both;
+}
+
+@media screen and (min-width: 1351px) {
+  .card-sobre-roteiro {
+    margin-top: 2em;
+    padding: 0 2em;
+    padding-top: 3em;
+  }
+
+  #input {
+    margin-bottom: 2em !important;
+  }
+
+  .box-form-sobre {
+    margin-bottom: 1.5em !important;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  main section {
+    font-size: 16px;
+  }
+
+  .card-info-roteiro {
+    margin: auto;
+    margin-top: 1em;
+    width: 50%;
+  }
+
+  .card-form-roteiro {
+    margin: auto;
+    margin-top: 1em;
+    width: 62%;
+  }
+
+  #input {
+    margin-bottom: 2em !important;
+  }
+
+  .box-form-sobre {
+    margin-bottom: 1.5em !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card-form-roteiro {
+    margin: auto;
+    margin-top: 1em;
+    width: 100%;
+  }
+}
+
+.CADASTRO-DO-ROTEIRO {
+  background-color: #f1e9e4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.CADASTRO-DO-ROTEIRO .div {
+  background-color: #f1e9e4;
+  overflow: hidden;
+  width: 1531px;
+  height: 1746px;
+  position: relative;
+}
+
+.CADASTRO-DO-ROTEIRO .overlap {
+  position: absolute;
+  width: 1531px;
+  height: 398px;
+  top: 1348px;
+  left: 0;
+  background-color: #3e4533;
+}
+
+.CADASTRO-DO-ROTEIRO .group {
+  position: relative;
+  width: 1277px;
+  height: 314px;
+  top: 51px;
+  left: 133px;
+}
+
+.CADASTRO-DO-ROTEIRO .overlap-group {
+  position: absolute;
+  width: 810px;
+  height: 20px;
+  top: 0;
+  left: 227px;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper {
+  position: absolute;
+  width: 810px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  font-family: "Marcellus SC", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 33px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.CADASTRO-DO-ROTEIRO .rua-das-colhetas {
+  position: absolute;
+  width: 629px;
+  height: 93px;
+  top: 86px;
+  left: 0;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #fffafa;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .facebook-wrapper {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 140px;
+  left: 914px;
+  background-image: url(https://c.animaapp.com/5n18FsvS/img/facebook-1-1@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.CADASTRO-DO-ROTEIRO .img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.CADASTRO-DO-ROTEIRO .whatsapp-wrapper {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 140px;
+  left: 1144px;
+  background-image: url(https://c.animaapp.com/5n18FsvS/img/whatsapp-1-1@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.CADASTRO-DO-ROTEIRO .twitter-wrapper {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 209px;
+  left: 1029px;
+  background-image: url(https://c.animaapp.com/5n18FsvS/img/twitter-1-1@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.CADASTRO-DO-ROTEIRO .youtube-wrapper {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 209px;
+  left: 1144px;
+  background-image: url(https://c.animaapp.com/5n18FsvS/img/youtube-1-1@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.CADASTRO-DO-ROTEIRO .instagram-wrapper {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 140px;
+  left: 1029px;
+  background-image: url(https://c.animaapp.com/5n18FsvS/img/instagram-1-1@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.CADASTRO-DO-ROTEIRO .logotipo-do-wrapper {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 212px;
+  left: 914px;
+  background-image: url(https://c.animaapp.com/5n18FsvS/img/logotipo-do-pinterest-1-1@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.CADASTRO-DO-ROTEIRO .n-s-NA-TRILHA {
+  position: absolute;
+  width: 629px;
+  height: 65px;
+  top: 234px;
+  left: 0;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #fffafa;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .overlap-2 {
+  position: absolute;
+  width: 410px;
+  height: 26px;
+  top: 87px;
+  left: 849px;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-2 {
+  position: absolute;
+  width: 410px;
+  height: 26px;
+  top: 0;
+  left: 0;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #fffafa;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-3 {
+  position: absolute;
+  width: 345px;
+  height: 25px;
+  top: 289px;
+  left: 881px;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #fffafa;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.CADASTRO-DO-ROTEIRO .overlap-3 {
+  position: absolute;
+  width: 1287px;
+  height: 913px;
+  top: 371px;
+  left: 122px;
+  background-color: #fffaf7;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-4 {
+  position: absolute;
+  width: 249px;
+  height: 32px;
+  top: 643px;
+  left: 77px;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .rectangle {
+  position: absolute;
+  width: 399px;
+  height: 340px;
+  top: 81px;
+  left: 64px;
+  object-fit: cover;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-5 {
+  position: absolute;
+  width: 249px;
+  height: 32px;
+  top: 40px;
+  left: 72px;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .rectangle-2 {
+  position: absolute;
+  width: 1153px;
+  height: 129px;
+  top: 683px;
+  left: 64px;
+  background-color: #fffaf7;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .rectangle-3 {
+  position: absolute;
+  width: 352px;
+  height: 84px;
+  top: 535px;
+  left: 865px;
+  background-color: #fffaf7;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .rectangle-4 {
+  position: absolute;
+  width: 375px;
+  height: 85px;
+  top: 534px;
+  left: 64px;
+  background-color: #fffaf7;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .rectangle-5 {
+  position: absolute;
+  width: 346px;
+  height: 52px;
+  top: 81px;
+  left: 484px;
+  background-color: #fffaf7;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-6 {
+  position: absolute;
+  width: 249px;
+  height: 32px;
+  top: 47px;
+  left: 486px;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-7 {
+  position: absolute;
+  width: 290px;
+  height: 32px;
+  top: 239px;
+  left: 488px;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-8 {
+  position: absolute;
+  width: 290px;
+  height: 32px;
+  top: 430px;
+  left: 487px;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-9 {
+  position: absolute;
+  width: 290px;
+  height: 32px;
+  top: 385px;
+  left: 864px;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-10 {
+  position: absolute;
+  width: 290px;
+  height: 32px;
+  top: 500px;
+  left: 871px;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .overlap-4 {
+  position: absolute;
+  width: 753px;
+  height: 52px;
+  top: 465px;
+  left: 78px;
+}
+
+.CADASTRO-DO-ROTEIRO .requisitos-de-viagem {
+  position: absolute;
+  width: 409px;
+  height: 32px;
+  top: 2px;
+  left: 0;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .span {
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-11 {
+  font-size: 20px;
+}
+
+.CADASTRO-DO-ROTEIRO .rectangle-6 {
+  position: absolute;
+  width: 346px;
+  height: 52px;
+  top: 0;
+  left: 407px;
+  background-color: #fffaf7;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-12 {
+  position: absolute;
+  width: 290px;
+  height: 32px;
+  top: 529px;
+  left: 490px;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .rectangle-7 {
+  position: absolute;
+  width: 346px;
+  height: 52px;
+  top: 273px;
+  left: 485px;
+  background-color: #fffaf7;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .rectangle-8 {
+  position: absolute;
+  width: 346px;
+  height: 52px;
+  top: 567px;
+  left: 484px;
+  background-color: #fffaf7;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .rectangle-9 {
+  position: absolute;
+  width: 346px;
+  height: 52px;
+  top: 419px;
+  left: 860px;
+  background-color: #fffaf7;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-13 {
+  position: absolute;
+  width: 249px;
+  height: 32px;
+  top: 143px;
+  left: 484px;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .overlap-5 {
+  position: absolute;
+  width: 339px;
+  height: 52px;
+  top: 178px;
+  left: 486px;
+}
+
+.CADASTRO-DO-ROTEIRO .rectangle-10 {
+  position: absolute;
+  width: 299px;
+  height: 52px;
+  top: 0;
+  left: 40px;
+  background-color: #fffaf7;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-14 {
+  position: absolute;
+  width: 41px;
+  height: 32px;
+  top: 9px;
+  left: 0;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .group-wrapper {
+  position: absolute;
+  width: 331px;
+  height: 317px;
+  top: 53px;
+  left: 860px;
+}
+
+.CADASTRO-DO-ROTEIRO .group-2 {
+  position: relative;
+  width: 349px;
+  height: 317px;
+}
+
+.CADASTRO-DO-ROTEIRO .ellipse {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 45px;
+  background-color: #fffaf7;
+  border-radius: 12.5px;
+  left: 2px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-15 {
+  position: absolute;
+  width: 291px;
+  height: 32px;
+  top: 83px;
+  left: 40px;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .overlap-6 {
+  position: absolute;
+  width: 291px;
+  height: 32px;
+  top: 42px;
+  left: 40px;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-16 {
+  position: absolute;
+  width: 291px;
+  height: 32px;
+  top: 0;
+  left: 0;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .ellipse-2 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 86px;
+  background-color: #fffaf7;
+  border-radius: 12.5px;
+  left: 2px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-17 {
+  position: absolute;
+  width: 291px;
+  height: 32px;
+  top: 124px;
+  left: 40px;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .ellipse-wrapper {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 127px;
+  left: 2px;
+  background-color: #fffaf7;
+  border-radius: 12.5px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .ellipse-3 {
+  position: relative;
+  width: 19px;
+  height: 19px;
+  top: 2px;
+  background-color: #0f270f;
+  border-radius: 9.5px;
+  left: 2px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-18 {
+  position: absolute;
+  width: 291px;
+  height: 32px;
+  top: 165px;
+  left: 40px;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .ellipse-4 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 168px;
+  background-color: #fffaf7;
+  border-radius: 12.5px;
+  left: 2px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-19 {
+  position: absolute;
+  width: 291px;
+  height: 32px;
+  top: 206px;
+  left: 40px;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-20 {
+  width: 291px;
+  height: 32px;
+  top: 246px;
+  left: 40px;
+  color: #0f270f;
+  font-size: 24px;
+  position: absolute;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-21 {
+  position: absolute;
+  width: 291px;
+  height: 32px;
+  top: 285px;
+  left: 40px;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .ellipse-5 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 209px;
+  background-color: #fffaf7;
+  border-radius: 12.5px;
+  left: 2px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .ellipse-6 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 249px;
+  background-color: #fffaf7;
+  border-radius: 12.5px;
+  left: 2px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .ellipse-7 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 288px;
+  background-color: #fffaf7;
+  border-radius: 12.5px;
+  left: 2px;
+  border: 1px solid;
+  border-color: #00000066;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-22 {
+  position: absolute;
+  width: 291px;
+  height: 32px;
+  top: -1px;
+  left: -1px;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .adicionar-roteiro {
+  position: absolute;
+  width: 407px;
+  height: 70px;
+  top: 842px;
+  left: 441px;
+  background-image: url(https://c.animaapp.com/5n18FsvS/img/rectangle-110-1.svg);
+  background-size: 100% 100%;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-23 {
+  position: absolute;
+  width: 363px;
+  height: 34px;
+  top: 17px;
+  left: 22px;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .input-field {
+  display: flex;
+  width: 346px;
+  align-items: center;
+  padding: 10.61px 21.23px;
+  position: absolute;
+  top: 343px;
+  left: 484px;
+  background-color: var(--surface-overlay);
+  border-radius: 5.31px 5.31px 0px 0px;
+}
+
+.CADASTRO-DO-ROTEIRO .input {
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  height: 57.38px;
+  margin-right: -2px;
+}
+
+.CADASTRO-DO-ROTEIRO .overlap-group-2 {
+  position: relative;
+  width: 304px;
+  height: 57px;
+}
+
+.CADASTRO-DO-ROTEIRO .input-autolayout {
+  display: flex;
+  width: 292px;
+  align-items: center;
+  gap: 5.31px;
+  position: absolute;
+  top: 25px;
+  left: 12px;
+}
+
+.CADASTRO-DO-ROTEIRO .input-text {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.33px;
+  opacity: 0.4;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #0f270f;
+  font-size: 24px;
+  letter-spacing: 0.2px;
+  line-height: 31.8px;
+  white-space: nowrap;
+}
+
+.CADASTRO-DO-ROTEIRO .label {
+  position: absolute;
+  width: 192px;
+  top: 0;
+  left: 0;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .overlap-7 {
+  position: absolute;
+  width: 1539px;
+  height: 322px;
+  top: 0;
+  left: 0;
+}
+
+.CADASTRO-DO-ROTEIRO .overlap-wrapper {
+  position: absolute;
+  width: 1539px;
+  height: 294px;
+  top: 0;
+  left: 0;
+}
+
+.CADASTRO-DO-ROTEIRO .overlap-8 {
+  position: relative;
+  width: 1531px;
+  height: 294px;
+}
+
+.CADASTRO-DO-ROTEIRO .rectangle-11 {
+  position: absolute;
+  width: 1531px;
+  height: 280px;
+  top: 0;
+  left: 0;
+  background-color: #3e4533;
+}
+
+.CADASTRO-DO-ROTEIRO .icon-cart {
+  position: absolute;
+  width: 58px;
+  height: 44px;
+  top: 165px;
+  left: 1410px;
+}
+
+.CADASTRO-DO-ROTEIRO .icon-bell {
+  position: absolute;
+  width: 39px;
+  height: 32px;
+  top: 174px;
+  left: 1352px;
+}
+
+.CADASTRO-DO-ROTEIRO .icon-person {
+  position: absolute;
+  width: 39px;
+  height: 45px;
+  top: 165px;
+  left: 1288px;
+}
+
+.CADASTRO-DO-ROTEIRO .group-3 {
+  position: absolute;
+  width: 840px;
+  height: 37px;
+  top: 166px;
+  left: 377px;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-24 {
+  width: 86px;
+  height: 24px;
+  top: 6px;
+  left: 0;
+  color: #ffffff;
+  font-size: 29px;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-25 {
+  position: absolute;
+  height: 36px;
+  top: 1px;
+  left: 145px;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-26 {
+  position: absolute;
+  width: 119px;
+  height: 24px;
+  top: 9px;
+  left: 711px;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-27 {
+  position: absolute;
+  height: 36px;
+  top: 0;
+  left: 323px;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-28 {
+  position: absolute;
+  width: 208px;
+  height: 24px;
+  top: 9px;
+  left: 444px;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #fffafa;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.CADASTRO-DO-ROTEIRO .rectangle-12 {
+  position: absolute;
+  width: 524px;
+  height: 57px;
+  top: 28px;
+  left: 629px;
+}
+
+.CADASTRO-DO-ROTEIRO .lupa {
+  position: absolute;
+  width: 34px;
+  height: 35px;
+  top: 37px;
+  left: 1104px;
+  object-fit: cover;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-29 {
+  position: absolute;
+  width: 151px;
+  height: 24px;
+  top: 45px;
+  left: 1343px;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-30 {
+  position: absolute;
+  width: 151px;
+  height: 24px;
+  top: 45px;
+  left: 1171px;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-31 {
+  position: absolute;
+  width: 238px;
+  height: 24px;
+  top: 45px;
+  left: 367px;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-32 {
+  position: absolute;
+  width: 316px;
+  height: 24px;
+  top: 45px;
+  left: 37px;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.CADASTRO-DO-ROTEIRO .bcaf {
+  position: absolute;
+  width: 235px;
+  height: 244px;
+  top: 50px;
+  left: 77px;
+  object-fit: cover;
+}
+
+.CADASTRO-DO-ROTEIRO .home-central-do {
+  position: absolute;
+  width: 817px;
+  height: 37px;
+  top: 285px;
+  left: 35px;
+  font-family: "Scada", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-33 {
+  color: #0f270f;
+}
+
+.CADASTRO-DO-ROTEIRO .text-wrapper-34 {
+  color: #859479;
+}

@@ -1,0 +1,77 @@
+#titulo_roteiros {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-interesses{
+    display: flex;
+    flex-direction: column;
+    padding-left: 4em;
+    height: 36vh;
+    width: 95%;
+    height: 1770px;
+ 
+}
+
+.box-interesses-2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 4em;
+    height: 36vh;
+    width: 95%;
+    height: 1770px;
+ 
+}
+
+.box-interesses span, .box-interesses p, .box-interesses h4{
+    color: #373737;
+}
+
+.box-interesses h3, .box-interesses h4{
+    font-weight: normal;
+}
+
+.box-titulo h3{
+    font-family: 'Scada', 'sans-serif';
+    font-weight: bold;
+    font-size: 33px;
+    color: #000000;
+    padding-left: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+.box-titulo{
+    margin-top: 4em;
+}
+
+.caixa-texto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0.8em;
+    background-color: #a9a9a9;
+    margin-top: 1em;
+}
+
+.caixa-texto h4{
+    color: #000000;
+    align-items: center;
+}
+
+.caixa-texto span{
+    cursor: pointer;
+    color: #000000;
+    font-weight: bold;
+    padding-right: 7%;
+    font-size: 25px;
+}
+
+.caixa-texto span:hover{
+    color: #FFFBFB;
+}

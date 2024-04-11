@@ -5,52 +5,54 @@ const form = document.getElementById('form_cadastro')
 form.addEventListener('submit', function(event) {
     event.preventDefault()
 
-    var planoAssinatura = document.getElementById('planoAssinatura').value.toUpperCase();
-    var porte = document.getElementById('porte').value;
-
-    const formData = {
-        parceiroDados: {
-            nome: document.getElementById('nameInput').value,
-            email: document.getElementById('emailInput').value,
-            numeroTelefone: document.getElementById('phoneInput').value,
-            identificador: document.getElementById('identificadorInput').value,
-            porte: porte,
-            tipoAssinatura: planoAssinatura,
-            senha: document.getElementById('senhaInput').value,
-        },
-        dadosEndereco: {
-            cep: document.getElementById('cepInput').value,
-            uf: document.getElementById('ufInput').value,
-            cidade: document.getElementById('cidadeInput').value,
-            logradouro: document.getElementById('ruaInput').value,
-            bairro: document.getElementById('bairroInput').value,
-            complemento: document.getElementById('complementoInput').value,
-            numero: document.getElementById('numeroInput').value,
+        var planoAssinatura = document.getElementById('planoAssinatura').value.toUpperCase();
+        var porte = document.getElementById('porte').value;
+    
+        const formData = {
+            parceiroDados: {
+                nome: document.getElementById('nameInput').value,
+                email: document.getElementById('emailInput').value,
+                numeroTelefone: document.getElementById('phoneInput').value,
+                identificador: document.getElementById('identificadorInput').value,
+                porte: porte,
+                tipoAssinatura: planoAssinatura,
+                senha: document.getElementById('senhaInput').value,
+            },
+            dadosEndereco: {
+                cep: document.getElementById('cepInput').value,
+                uf: document.getElementById('ufInput').value,
+                cidade: document.getElementById('cidadeInput').value,
+                logradouro: document.getElementById('ruaInput').value,
+                bairro: document.getElementById('bairroInput').value,
+                complemento: document.getElementById('complementoInput').value,
+                numero: document.getElementById('numeroInput').value,
+            }
         }
+
+        if (validarCampos(formData)) {
+        
+            fetch(url_cadastro, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Não foi possível enviar os dados.')
+                }
+                return response.json()
+            })
+            .then(data => {
+                alert('Cadastro efetuado!')
+                form.reset()
+                exibirDadosLogin(data)
+            })
+            .catch(error => {
+                console.log('Erro', error)
+            })
     }
-    console.log(formData)
-
-    fetch(url_cadastro, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Não foi possível enviar os dados.')
-        }
-        return response.json()
-    })
-    .then(data => {
-        alert('Cadastro efetuado!')
-        form.reset()
-        exibirDadosLogin(data)
-    })
-    .catch(error => {
-        console.log('Erro', error)
-    })
 })
 
 function exibirDadosLogin(data) {
@@ -67,3 +69,23 @@ function exibirDadosLogin(data) {
     dadosLoginDiv.appendChild(emailSpan)
     dadosLoginDiv.appendChild(senhaSpan)
 }
+
+function validarCampos(formData) {
+    let camposPreenchidos = true;
+  
+    for (const campo in formData) {
+      for (const propriedade in formData[campo]) {
+        if (formData[campo][propriedade].trim() === "") {
+          camposPreenchidos = false;
+          break;
+        }
+      }
+    }
+  
+    if (!camposPreenchidos) {
+      alert("É necessário o preenchimento de todos os campos!");
+    }
+  
+    return camposPreenchidos;
+  }
+  
