@@ -20,7 +20,7 @@ form.addEventListener('submit', function(event) {
     .then(response => {
         if (!response.ok) {
             if (response.status === 401) {
-                mostrarErro()
+                showErrorModal(); 
                 return;
             }  else {
                 throw new Error("Erro ao realizar login.")
@@ -42,7 +42,14 @@ form.addEventListener('submit', function(event) {
 
 })
 
-function mostrarErro() {
-    var divErro = document.getElementById('info_login')
-    divErro.style.display = 'flex'
+function showErrorModal() {
+    const errorModal = document.getElementById('error-modal');
+    errorModal.style.display = 'block'; 
 }
+
+const closeButtons = document.querySelectorAll('.close');
+closeButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        this.parentElement.parentElement.style.display = 'none';
+    });
+});

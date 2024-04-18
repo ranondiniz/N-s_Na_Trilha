@@ -2,6 +2,17 @@
 
 const url_cadastro = "http://localhost:8080/admin"
 
+document.addEventListener("DOMContentLoaded", function() {
+    const emailExistModal = document.getElementById("email-exist-modal");
+    const successModal = document.getElementById("success-modal");
+    const closeButtons = document.querySelectorAll(".close");
+  
+    closeButtons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        this.parentElement.parentElement.style.display = "none";
+      });
+    });
+
 const form = document.getElementById('form_cadastro')
 
 form.addEventListener('submit', function(event) {
@@ -25,17 +36,18 @@ form.addEventListener('submit', function(event) {
     })
     .then(response => {
         if (!response.ok) {
-            if (response.status === 409) {
-                alert('Email já cadastrado.')
-                return;
-            }
-        } else if (response.ok) {
-            alert('Cadastro efetuado!')
-            form.reset()
+          if (response.status === 409) {
+            emailExistModal.style.display = "block"; 
+            return;
+          }
+        } else {
+          successModal.style.display = "block"; 
+          form.reset();
         }
-        return response.json()
-    })
-    .catch(error => {
+        return response.json();
+      })
+      .catch(error => {
         console.error('Erro:', error);
+      });
     });
-})
+  });

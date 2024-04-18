@@ -1,5 +1,17 @@
 const url_cadastro = "http://localhost:8080/parceiro"
 
+document.addEventListener("DOMContentLoaded", function() {
+    const errorModal = document.getElementById("error-modal");
+    const successModal = document.getElementById("success-modal");
+    const emptyFieldsModal = document.getElementById("empty-fields-modal");
+
+    const closeButtons = document.querySelectorAll(".close");
+    closeButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            this.parentElement.parentElement.style.display = "none";
+        });
+    });
+
 const form = document.getElementById('form_cadastro')
 
 form.addEventListener('submit', function(event) {
@@ -45,15 +57,16 @@ form.addEventListener('submit', function(event) {
                 return response.json()
             })
             .then(data => {
-                alert('Cadastro efetuado!')
-                form.reset()
-                exibirDadosLogin(data)
+                successModal.style.display = "block";
+                form.reset();
+                exibirDadosLogin(data);
             })
             .catch(error => {
-                console.log('Erro', error)
-            })
-    }
-})
+                console.error("Erro:", error);
+                errorModal.style.display = "block";
+            });
+        }
+    });
 
 function exibirDadosLogin(data) {
     var dadosLoginDiv = document.getElementById('dados_login')
@@ -72,20 +85,20 @@ function exibirDadosLogin(data) {
 
 function validarCampos(formData) {
     let camposPreenchidos = true;
-  
+
     for (const campo in formData) {
-      for (const propriedade in formData[campo]) {
-        if (formData[campo][propriedade].trim() === "") {
-          camposPreenchidos = false;
-          break;
+        for (const propriedade in formData[campo]) {
+            if (formData[campo][propriedade].trim() === "") {
+                camposPreenchidos = false;
+                break;
+            }
         }
-      }
     }
-  
+
     if (!camposPreenchidos) {
-      alert("É necessário o preenchimento de todos os campos!");
+        emptyFieldsModal.style.display = "block";
     }
-  
+
     return camposPreenchidos;
-  }
-  
+}
+});
