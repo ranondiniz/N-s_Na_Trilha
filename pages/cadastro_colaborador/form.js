@@ -5,8 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const successModal = document.getElementById("success-modal");
     const emptyFieldsModal = document.getElementById("empty-fields-modal");
 
-    const closeButtons = document.querySelectorAll(".close");
+    const closeButtons = document.querySelectorAll(".ok-button");
     closeButtons.forEach(function(button) {
+        button.textContent = "Ok"; 
         button.addEventListener("click", function() {
             this.parentElement.parentElement.style.display = "none";
         });

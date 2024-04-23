@@ -5,7 +5,7 @@ const url_cadastro = "http://localhost:8080/admin"
 document.addEventListener("DOMContentLoaded", function() {
     const emailExistModal = document.getElementById("email-exist-modal");
     const successModal = document.getElementById("success-modal");
-    const closeButtons = document.querySelectorAll(".close");
+    const closeButtons = document.querySelectorAll(".ok-button");
   
     closeButtons.forEach(function(button) {
       button.addEventListener("click", function() {

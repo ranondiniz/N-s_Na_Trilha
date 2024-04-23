@@ -47,7 +47,7 @@ function showErrorModal() {
     errorModal.style.display = 'block'; 
 }
 
-const closeButtons = document.querySelectorAll('.close');
+const closeButtons = document.querySelectorAll('.ok-button');
 closeButtons.forEach(button => {
     button.addEventListener('click', function() {
         this.parentElement.parentElement.style.display = 'none';
