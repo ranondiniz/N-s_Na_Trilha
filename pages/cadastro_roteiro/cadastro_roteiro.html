@@ -112,6 +112,12 @@
                   <label for="sitio-arqueologico">Sítio Arqueológico</label>
                 </li>
               </ul>
+              <select id="estado" class="estado">
+                <option value="" disabled selected>Selecione um estado</option>
+              </select>
+              <select id="cidade" class="cidade">
+                <option value="" disabled selected>Selecione uma cidade</option>
+              </select>
             </div>
           </div>
           <button class="adicionar-roteiro">
@@ -160,6 +166,58 @@
         </div>
       </section>
     </footer>
+    <script type="text/javascript" src="../../components/script.js"></script>
+    <script>
+      // Função para carregar os estados brasileiros
+      function carregarEstados() {
+        var estadoSelect = document.getElementById('estado');
+    
+        // Requisição para a API do IBGE para obter a lista de estados
+        fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados')
+          .then(response => response.json())
+          .then(data => {
+            // Preencher a lista suspensa com os estados
+            data.forEach(estado => {
+              var option = document.createElement('option');
+              option.text = estado.nome;
+              option.value = estado.sigla;
+              estadoSelect.add(option);
+            });
+          });
+      }
+    
+      // Função para carregar as cidades de um estado selecionado
+      function carregarCidades(estadoSelecionado) {
+        var cidadeSelect = document.getElementById('cidade');
+        cidadeSelect.innerHTML = '<option value="" disabled selected>Selecione uma cidade</option>';
+    
+        // Requisição para a API do IBGE para obter as cidades do estado selecionado
+        fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${estadoSelecionado}/municipios`)
+          .then(response => response.json())
+          .then(data => {
+            // Preencher a lista suspensa com as cidades
+            data.forEach(cidade => {
+              var option = document.createElement('option');
+              option.text = cidade.nome;
+              option.value = cidade.nome;
+              cidadeSelect.add(option);
+            });
+          });
+      }
+    
+      // Quando a página carregar, carregar os estados
+      document.addEventListener('DOMContentLoaded', function() {
+        carregarEstados();
+    
+        // Quando o estado for alterado, carregar as cidades
+        document.getElementById('estado').addEventListener('change', function() {
+          var estadoSelecionado = this.value;
+          if (estadoSelecionado) {
+            carregarCidades(estadoSelecionado);
+          }
+        });
+      });
+    </script>
   </main>
   <script type="text/javascript" src="../../components/script.js"></script>
 </html>
