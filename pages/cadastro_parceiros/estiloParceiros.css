@@ -174,21 +174,29 @@
 }
 
 @media screen and (max-width: 1350px){
-    main section{
-        font-size: 16px;
+    .card-info-parceiros {
+        margin-top: 1em;
+        width: 50%; 
+        max-width: 50%; 
     }
 
-    .card-info-parceiros{
-        margin: auto;
+    .card-form-parceiros {
+        position: relative; 
         margin-top: 1em;
-        width: 65%;
+        width: 50%;
+        max-width: 50%;
+    }
+    
+    .sobre-submit {
+        position: absolute; 
+        bottom: 0; 
+        right: 0; 
     }
 
-    .card-form-parceiros{
-        margin: auto;
-        margin-top: 1em;
-        width: 85%;
+    .card-info-parceiros img {
+        width: 100%; 
     }
+
     #input{
         margin-bottom: 2em !important;
     }
@@ -199,10 +207,56 @@
 
 }
 
+
 @media screen and (max-width: 800px){
-    .card-form-parceiros{
-        margin: auto;
+    .card-form-parceiros {
         margin-top: 1em;
-        width: 100%;
+        width: 100%; 
+        max-width: 100%; 
+    }
+
+    .card-form-parceiros {
+        width: 100%; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+
+    #btn_enviar {
+        position: static; 
+        margin-top: 2em; 
+    }
+
+    .card-info-parceiros img {
+        display: none; 
     }
 }
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    .card-form-parceiros {
+        margin-top: 1em;
+        width: 100%; 
+        max-width: 100%; 
+    }
+
+    .card-form-parceiros {
+        width: 100%; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+
+    #btn_enviar {
+        position: static; 
+        margin-top: 2em; 
+    }
+
+    .card-info-parceiros img {
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .box_servicos label {
+        font-size: 14px; 
+    }
+}
+
