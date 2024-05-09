@@ -530,7 +530,6 @@ footer li {
 }
 
 
-
 /* FOOTER */
 
 footer {
@@ -572,7 +571,6 @@ footer .margin_top {
     margin-top: 1.2em;
 }
 
-
 @media (min-width: 1500px) {
     body {
         font-size: 18px;
@@ -585,49 +583,57 @@ footer .margin_top {
         font-size: 16px;
     }
 
-    .container-1 {
-        justify-content: flex-start;
+    .container-2 {
+        display: block;
     }
 
     .breadcrumbs {
         font-size: 16px;
     }
 
-    .container-2 {
+    .container-3 {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        max-width: 90%;
     }
 
-    #button-adicionar-roteiro {
+    #button-adiciona_roteiro {
         margin: 2%;
         width: 40%;
     }
 
-    #roteiros-catalogados, #servicos-parceiros {
+    #roteiros-catalogados, #roteiros-catalogados {
         width: 90%;
     }
 }
 
 @media screen and (max-width: 830px) {
     .container {
-        display: flex;
-        flex-direction: column;
+        display: block;
+    
     }
 
     #perfil {
-        width: 90%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    #perfil-responsivo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    #perfil-responsivo #perfil-top, #perfil-center, #itens {
+        display: block;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 @media screen and (max-width: 499px) {
-    .container-1 {
+    .container {
         display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
 }
 }
