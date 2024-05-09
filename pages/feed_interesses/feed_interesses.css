@@ -75,3 +75,68 @@
 .caixa-texto span:hover{
     color: #FFFBFB;
 }
+
+
+@media screen and (max-width: 1335px) {
+
+    #titulo_roteiros {
+        font-size: 16px;
+        align-items: center;
+        display: block;
+    }
+
+    .box_container, .box_interesses, .box_titulo {
+        display: block;
+        align-items: center;
+    }
+
+    .caixa_texto, .box-titulo {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+
+    #titulo_roteiros{
+        text-align: center;
+        width: 150%;
+
+    }
+}
+    #titulo_roteiros img {
+        align-items: center;
+        
+    }
+    .box-container, .box_interesses, .box_titulo {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    
+    }
+    .caixa-texto, .box-titulo {
+        align-items: center;
+       
+    }
+
+@media screen and (max-width: 499px) {
+
+    .box-interesses {
+        display: block;
+        margin-right:auto;
+        margin-left: 50%; 
+        margin-bottom: 200px;
+    }
+    
+    #titulo_roteiros {
+        margin-left: 50%;
+        display: block;
+    }
+    .box-container, .box-titulo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+       
+    }
+}
