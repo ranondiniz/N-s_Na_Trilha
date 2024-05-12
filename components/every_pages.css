@@ -262,6 +262,34 @@ footer .margin_top {
 }
 
 
+@media (max-width: 1200px) {
+    footer {
+        font-size: 1.3em;
+    }
+
+    footer .right img {
+        width: 2em;
+    }    
+}
+
+@media (max-width: 650px) {
+
+    footer {
+        padding: 1em;
+    }
+
+    footer section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .right {
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+    }
+}
+
 @media (min-width: 1500px) {
     body {
         font-size: 18px;
