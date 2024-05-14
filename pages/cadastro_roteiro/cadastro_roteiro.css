@@ -109,7 +109,16 @@ main {
 .roteiro .dados button:hover {
   background-color: #096b00;
 }
+.imagem {
+  width: 100%; /* Defina a largura desejada */
+  height: 400px; /* Defina a altura desejada */
+  overflow: hidden; /* Para garantir que a imagem não ultrapasse os limites da div */
+}
 
+.imagem img {
+  width: 100%; /* Para garantir que a imagem ocupe toda a largura da div */
+  height: auto; /* Para manter a proporção da imagem */
+}
 footer {
   background-color: #f0f0f0;
   padding: 20px;
