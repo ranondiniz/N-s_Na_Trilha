@@ -42,96 +42,71 @@
     </nav>
   </header>
 
-  <main>
-    <section class="box-central">
-      <div class="info-breadcrumbs">
-        <span class="breadcrumbs">Home |<span> Central do Colaborador | <span>Perfil do Colaborador | <span>Perfil do
-                Colaborador |<span> Cadastro Roteiro</span></span>
-      </div>
-
-      <div class="CADASTRO-DO-ROTEIRO">
-        <div class="overlap-3">
-          <div class="text-wrapper-4">Descrição:</div>
-          <img class="rectangle" src="img/rectangle-105.png" />
-          <div class="text-wrapper-5">Imagem</div>
-          <input class="rectangle-2"></input>
-          <input class="rectangle-3"></input>
-          <input class="rectangle-4"></input>
-          <input class="rectangle-5"></input>
-          <div class="text-wrapper-6">Nome:</div>
-          <div class="text-wrapper-7">Quantidade de vagas:</div>
-          <div class="text-wrapper-8">Horário de saída:</div>
-          <div class="text-wrapper-9">Transporte:</div>
-          <div class="text-wrapper-10">Atrações e Atividades:</div>
-          <div class="overlap-4">
-            <p class="requisitos-de-viagem">
-              <span class="span"><br /></span> <span class="text-wrapper-11">Requisitos de Viagem e Documentação:</span>
-            </p>
-            <input class="rectangle-6"></input>
-          </div>
-          <div class="text-wrapper-12">Alojamento:</div>
-          <input class="rectangle-7"></input>
-          <input class="rectangle-8"></input>
-          <input class="rectangle-9"></input>
-          <div class="text-wrapper-13">Preço unitário:</div>
-          <div class="overlap-5">
-            <input class="rectangle-10"></input>
-            <div class="text-wrapper-14">R$</div>
-          </div>
-          <div class="group-wrapper">
-            <div class="group-2">
-              <div class="text-wrapper-22">Selecione uma categoria:</div>
-              <br><br><br>
-              <ul class="radio">
-                <li>
-                  <input type="radio" id="trilha" name="categoria" value="Trilha">
-                  <label for="trilha">Trilha</label>
-                </li>
-                <li>
-                  <input type="radio" id="escalada" name="categoria" value="Escalada">
-                  <label for="escalada">Escalada</label>
-                </li>
-                <li>
-                  <input type="radio" id="praia" name="categoria" value="Praia">
-                  <label for="praia">Praia</label>
-                </li>
-                <li>
-                  <input type="radio" id="ponto-turistico" name="categoria" value="Ponto Turístico">
-                  <label for="ponto-turistico">Ponto Turístico</label>
-                </li>
-                <li>
-                  <input type="radio" id="cachoeira" name="categoria" value="Cachoeira">
-                  <label for="cachoeira">Cachoeira</label>
-                </li>
-                <li>
-                  <input type="radio" id="rio" name="categoria" value="Rio">
-                  <label for="rio">Rio</label>
-                </li>
-                <li>
-                  <input type="radio" id="sitio-arqueologico" name="categoria" value="Sítio Arqueológico">
-                  <label for="sitio-arqueologico">Sítio Arqueológico</label>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <button class="adicionar-roteiro">
-            <div class="text-wrapper-23">ADICIONAR ROTEIRO</div>
-          </button>
-          <div class="input-field">
-            <div class="input">
-              <div class="overlap-group-2">
-                <div class="input-autolayout"><input type="date" class="input-text"></input></div>
-                <div class="label">Data de início:</div>
+    <main>
+        <section class="roteiro">
+            <form action="#">
+              <div class="imagem">
+                <img src="https://via.placeholder.com/800x400" alt="Imagem do roteiro">
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-  </body>
+                <div class="dados">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <label for="categoria">Selecione uma categoria:</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Selecione...</option>
+                        <option value="Trilha">Trilha</option>
+                        <option value="Escalada">Escalada</option>
+                        <option value="Praia">Praia</option>
+                        <option value="Ponto Turístico">Ponto Turístico</option>
+                        <option value="Cachoeira">Cachoeira</option>
+                        <option value="Rio">Rio</option>
+                        <option value="Sítio Arqueológico">Sítio Arqueológico</option>
+                    </select>
+
+                    <label for="estado">Selecione um estado:</label>
+                      <select id="estado" class="estado">
+                        <option value="" disabled selected>Selecione um estado</option>
+                      </select>
+
+                      <label for="estado">Selecione um estado:</label>
+                      <select id="cidade" class="cidade">
+                        <option value="" disabled selected>Selecione uma cidade</option>
+                      </select>
+
+                    <label for="preco">Preço unitário:</label>
+                    <input type="number" id="preco" name="preco" required>
+
+                    <label for="vagas">Quantidade de vagas:</label>
+                    <input type="number" id="vagas" name="vagas" required>
+
+                    <label for="dataInicio">Data de início:</label>
+                    <input type="date" id="dataInicio" name="dataInicio" required>
+
+                    <label for="horarioSaida">Horário de saída:</label>
+                    <input type="time" id="horarioSaida" name="horarioSaida" required>
+
+                    <br>
+                    <label for="requisitos">Requisitos de Viagem e Documentação:</label>
+                    <textarea id="requisitos" name="requisitos" rows="5" required></textarea>
+
+                    <label for="atracoes">Atrações e Atividades:</label>
+                    <textarea id="atracoes" name="atracoes" rows="5" required></textarea>
+
+                    <label for="acomodacao">Alojamento:</label>
+                    <textarea id="acomodacao" name="acomodacao" rows="5" required></textarea>
+
+                    <br>
+                    <label for="descrição">Descrição:</label>
+                    <textarea id="descrição" name="descrição" rows="5" required></textarea>
+
+                    <br>
+                    <button type="submit">ADICIONAR ROTEIRO</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
     <footer>
       <div>ENTRE EM CONTATO PARA MAIS INFORMAÇÕES</div>
       <section>
@@ -160,6 +135,58 @@
         </div>
       </section>
     </footer>
+    <script type="text/javascript" src="../../components/script.js"></script>
+    <script>
+      // Função para carregar os estados brasileiros
+      function carregarEstados() {
+        var estadoSelect = document.getElementById('estado');
+    
+        // Requisição para a API do IBGE para obter a lista de estados
+        fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados')
+          .then(response => response.json())
+          .then(data => {
+            // Preencher a lista suspensa com os estados
+            data.forEach(estado => {
+              var option = document.createElement('option');
+              option.text = estado.nome;
+              option.value = estado.sigla;
+              estadoSelect.add(option);
+            });
+          });
+      }
+    
+      // Função para carregar as cidades de um estado selecionado
+      function carregarCidades(estadoSelecionado) {
+        var cidadeSelect = document.getElementById('cidade');
+        cidadeSelect.innerHTML = '<option value="" disabled selected>Selecione uma cidade</option>';
+    
+        // Requisição para a API do IBGE para obter as cidades do estado selecionado
+        fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${estadoSelecionado}/municipios`)
+          .then(response => response.json())
+          .then(data => {
+            // Preencher a lista suspensa com as cidades
+            data.forEach(cidade => {
+              var option = document.createElement('option');
+              option.text = cidade.nome;
+              option.value = cidade.nome;
+              cidadeSelect.add(option);
+            });
+          });
+      }
+    
+      // Quando a página carregar, carregar os estados
+      document.addEventListener('DOMContentLoaded', function() {
+        carregarEstados();
+    
+        // Quando o estado for alterado, carregar as cidades
+        document.getElementById('estado').addEventListener('change', function() {
+          var estadoSelecionado = this.value;
+          if (estadoSelecionado) {
+            carregarCidades(estadoSelecionado);
+          }
+        });
+      });
+    </script>
   </main>
   <script type="text/javascript" src="../../components/script.js"></script>
 </html>
