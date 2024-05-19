@@ -131,13 +131,17 @@
     color: #F1E9E4;
 }
 
-.box_contato h2{
-    margin-left: 3em;
-    border-left: 3px solid #859479;
-    padding-left: 10px;
+.box_contato {
+    margin-top: 80px;
 
-    font-family: "Marcellus SC", serif;
-    font-weight: 500;
+    h2 {
+        margin-left: 3em;
+        border-left: 3px solid #859479;
+        padding-left: 10px;
+    
+        font-family: "Marcellus SC", serif;
+        font-weight: 500;
+    }
 }
 
 .grid_2_columns {

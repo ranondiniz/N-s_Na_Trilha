@@ -1,0 +1,241 @@
+.box-central{
+    padding: 1em 2em;
+}
+
+.box-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #999; 
+}
+
+.barra-pesquisa {
+    display: flex;
+    width: 50%;
+}
+
+body {
+    background-color: #f8ece4; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.card-form-vendedor{
+    margin-top: 1em;
+    width: 35%;
+    background-color: #ffffff; 
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+.card-form-vendedor h3{
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    margin-top: 1em;
+    color: #0F270F;
+    font-size: 1.5em;
+}
+
+.card-form-vendedor form label{
+    display: block;
+    color: black;
+    margin-top: 1em;
+}
+
+.form-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.box-form-line{
+    width: 100%;
+}
+
+.box_dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.box_dados div {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.box_dados input {
+    margin-top: 1em;
+}
+
+.input{
+    height: 33px;
+    color: black;
+    width: 100%;
+}
+
+.input-line{
+    width: 95%;
+    margin-left: 5%;
+}
+
+.label-line{
+    margin-left: 5%;
+}
+
+.input-line-tall{
+    height: 33px;
+    color: black;
+    width: 140%;
+}
+
+.label-line-small{
+    margin-left: 50%;
+}
+
+.input-line-small{
+    width: 40%;
+    margin-right: 50%;
+}
+
+.box-form-sobre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box_opcoes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.box_opcoes .opcoes {
+    width: 20%;
+}
+
+.opcoes {
+    height: 40px;
+    border: none;
+    font-size: 1em;
+    border-radius: 20px;
+    background-color: #859479;
+    margin-top: 1em;
+}
+
+.radio{
+    margin: 4% 1% 0 5%;
+}
+.left{
+    margin-left: 0%;
+}
+
+.box-form-sobre-radio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.form-sobre p{
+    color: black;
+    font-size: 12px;
+    margin-top: 1%;
+}
+
+.form-sobre span{
+    color: black;
+}
+
+#btn_cadastrar {
+    text-align: right;
+    margin: 1em 0;
+}
+
+#btn_cadastrar input {
+    background-color: #0F270F;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+    border-top-left-radius: 50px;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+#dados_login {
+    display: none;
+}
+
+#dados_login h4 {
+    color: #0F270F;
+}
+
+#dados_login.exibido {
+    padding: 1em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.clear{
+    clear: both;
+}
+
+@media screen and (min-width: 1351px){
+    main section {
+        font-size: 21px;
+    }
+
+    #input{
+        margin-bottom: 2em !important;
+    }
+
+    .box-form-sobre{
+        margin-bottom: 1.5em !important;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    main section{
+        font-size: 16px;
+    }
+
+    .card-info-vendedor{
+        display: none;
+    }
+
+    .card-form-vendedor{
+        margin: auto;
+        margin-top: 1em;
+        width: 80%;
+    }
+    #input{
+        margin-bottom: 2em !important;
+    }
+
+    .box-form-sobre{
+        margin-bottom: 1.5em !important;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .card-form-vendedor{
+        margin: auto;
+        margin-top: 1em;
+        width: 100%;
+    }
+}

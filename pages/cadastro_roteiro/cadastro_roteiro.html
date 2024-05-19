@@ -44,7 +44,7 @@
 
     <main>
         <section class="roteiro">
-            <form action="#">
+            <form action="#" id="form_cadastro">
               <div class="imagem">
                 <img src="https://via.placeholder.com/800x400" alt="Imagem do roteiro">
               </div>
@@ -69,7 +69,7 @@
                         <option value="" disabled selected>Selecione um estado</option>
                       </select>
 
-                      <label for="estado">Selecione um estado:</label>
+                      <label for="cidade">Selecione uma cidade:</label>
                       <select id="cidade" class="cidade">
                         <option value="" disabled selected>Selecione uma cidade</option>
                       </select>
@@ -85,6 +85,9 @@
 
                     <label for="horarioSaida">Horário de saída:</label>
                     <input type="time" id="horarioSaida" name="horarioSaida" required>
+                    
+                    <label for="transporte">Transporte:</label>
+                    <input type="text" id="transporte" name="transporte" required>
 
                     <br>
                     <label for="requisitos">Requisitos de Viagem e Documentação:</label>
@@ -93,13 +96,14 @@
                     <label for="atracoes">Atrações e Atividades:</label>
                     <textarea id="atracoes" name="atracoes" rows="5" required></textarea>
 
-                    <label for="acomodacao">Alojamento:</label>
-                    <textarea id="acomodacao" name="acomodacao" rows="5" required></textarea>
+                    <label for="alojamento">Alojamento:</label>
+                    <textarea id="alojamento" name="alojamento" rows="5" required  style="height: 70px;"></textarea>
 
                     <br>
                     <label for="descrição">Descrição:</label>
-                    <textarea id="descrição" name="descrição" rows="5" required></textarea>
+                    <textarea id="descricao" name="descricao" rows="5" required></textarea>
 
+                    <div id="mensagem_retorno"></div>
                     <br>
                     <button type="submit">ADICIONAR ROTEIRO</button>
                 </div>
@@ -135,6 +139,7 @@
         </div>
       </section>
     </footer>
+    <script src="cadastro_roteiro.js"></script>
     <script type="text/javascript" src="../../components/script.js"></script>
     <script>
       // Função para carregar os estados brasileiros

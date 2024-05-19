@@ -12,36 +12,67 @@
 
     <link rel="stylesheet" href="home.css">
     <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
-        <nav class="nav_header">
-            <span>Central de Colaboradores</span>
-            <span>Parcerias</span>
+        <section id="desktop">
+            <nav class="nav_header">
+                <span id="central_colab" class="nav_item">Central de Colaboradores</span>
+                <span>Parcerias</span>
+                <div class="div_busca">
+                    <input type="text" id="txt_busca">
+                    <img src="images/lupa_search.svg" class="btn_busca" alt="Buscar">
+                </div>
+                <span id="login" class="nav_item">Login</span>
+                <span>Cadastre-se</span>
+            </nav>
+            <nav class="nav_header_2">
+                <div>
+                    <img src="../../components/images/logo_principal.svg" alt="Logo da Nós na Trilha" class="logo_principal">
+                </div>
+                <div class="opcoes_nav">
+                    <li>HOME</li>
+                    <li>ROTEIROS</li>
+                    <li>FEED</li>
+                    <li>NOSSA HISTÓRIA</li>
+                    <li>CONTATO</li>
+                </div>
+                <div class="icons_nav">
+                    <img src="../../components/images/perfil.svg" alt="Perfil" id="img_perfil">
+                    <img src="../../components/images/notificacoes.svg" alt="Notificações" id="img_sino">
+                    <img src="../../components/images/carrinho.svg" alt="Carrinho de Compras" id="img_cart">
+                </div>
+            </nav>
+        </section>
+        <section id="mobile">
+            <img src="../../components/images/logo_principal.svg" alt="Logo da Nós na Trilha" class="logo_principal">
             <div class="div_busca">
                 <input type="text" id="txt_busca">
                 <img src="images/lupa_search.svg" class="btn_busca" alt="Buscar">
             </div>
-            <span>Login</span>
-            <span>Cadastre-se</span>
-        </nav>
-        <nav class="nav_header_2">
-            <div>
-                <img src="../../components/images/logo_principal.svg" alt="Logo da Nós na Trilha" class="logo_principal">
-            </div>
-            <div class="opcoes_nav">
-                <li>HOME</li>
-                <li>ROTEIROS</li>
-                <li>FEED</li>
-                <li>NOSSA HISTÓRIA</li>
-                <li>CONTATO</li>
-            </div>
-            <div class="icons_nav">
-                <img src="../../components/images/perfil.svg" alt="Perfil" id="img_perfil">
-                <img src="../../components/images/notificacoes.svg" alt="Notificações" id="img_sino">
-                <img src="../../components/images/carrinho.svg" alt="Carrinho de Compras" id="img_cart">
-            </div>
-        </nav>
+            <nav id="nav_mobile">
+                <buttton id="btn-mobile" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hambuguer"></span>
+                </buttton>
+                <section id="menu" role="menu">
+                    <li>ROTEIROS</li>
+                    <li>FEED</li>
+                    <li>NOSSA HISTÓRIA</li>
+                    <li>CONTATO</li>
+                    <li>CADASTRE-SE</li>
+                    <div id="colab_mobile">
+                        <li>PARCERIAS</li>
+                        <li>CENTRAL DE COLABORADORES</li>
+                    </div>
+                    <div id="icons_nav_mobile">
+                        <img src="../../components/images/perfil.svg" alt="Perfil" id="img_perfil">
+                        <img src="../../components/images/notificacoes.svg" alt="Notificações" id="img_sino">
+                        <img src="../../components/images/carrinho.svg" alt="Carrinho de Compras" id="img_cart">
+                    </div>
+                </section>
+            </nav>
+        </section>
     </header>
     <main>
         <section id="titulo_roteiros">
@@ -175,6 +206,65 @@
             </div>
             <span id="compre_conosco">Compre conosco você também!</span>
         </div>
+
+        <!--INICIO MODAL PARA TODAS AS TELAS-->
+
+        <section class="fundo-modal cliente-modal">
+            <div class="modal cliente">
+                <span class="legenda">Home | Login</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>LOGIN - USUÁRIO</h3>
+                    <br>
+                    <span class="text-modal">Bem Vindo de Volta!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/button-google.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Senha">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">Esqueceu a senha?</span>
+                            <span class="text-gray">Precisa de ajuda?</span>
+                        </div>
+
+                        <input onclick="test2()" id="link2" type="button" name="" value="Entrar">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="fundo-modal  colaborador-modal">
+            <div class="modal colaborador">
+                <span class="legenda">Home | Central de Colaboradores | Login</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>LOGIN - COLABORADOR</h3>
+                    <br>
+                    <span class="text-modal">Bem Vindo de Volta!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/button-google.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Senha">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">Esqueceu a senha?</span>
+                            <span class="text-gray">Precisa de ajuda?</span>
+                        </div>
+
+                        <input onclick="test();" id="link" type="button" name="" value="Entrar">
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!--FIM MODAL PARA TODAS AS TELAS-->
+
         <div class="box_contato">
             <h2>CONTATO</h2>
             <div class="grid_2_columns">
@@ -235,5 +325,7 @@
             </div>
         </section>
     </footer>
+    <script type="text/javascript" src="../../components/script.js"></script>
+    <script src="../../components/script.js"></script>
 </body>
 </html>

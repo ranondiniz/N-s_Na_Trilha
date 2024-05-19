@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Colaborador - Nós na Trilha</title>
+
+    <link rel="stylesheet" href="../../components/every_pages.css">
+    <link rel="stylesheet" href="perfil_colaborador.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav_header">
+            <span>Central de Colaboradores</span>
+            <span>Parcerias</span>
+            <div class="div_busca">
+                <input type="text" id="txt_busca">
+                <img src="images/lupa-search.svg.png" class="btn_busca" alt="Buscar">
+            </div>
+            <span>Login</span>
+            <span>Cadastre-se</span>
+        </nav>
+        <nav class="nav_header_2">
+            <div>
+                <img src="../../components/images/logo_principal.svg.png" alt="Logo da Nós na Trilha" class="logo_principal">
+            </div>
+            <div class="opcoes_nav">
+                <li>HOME</li>
+                <li>ROTEIROS</li>
+                <li>FEED</li>
+                <li>NOSSA HISTÓRIA</li>
+                <li>CONTATO</li>
+            </div>
+            <div class="icons_nav">
+                <img src="../../components/images/perfil.svg" alt="Perfil" id="img_perfil">
+                <img src="../../components/images/notificacoes.svg" alt="Notificações" id="img_sino">
+                <img src="../../components/images/carrinho.svg" alt="Carrinho de Compras" id="img_cart">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="info-breadcrumbs">
+            <span class="breadcrumbs">Home | Central do Vendedor | <span> Perfil do Colaborador</span></span></span>
+        </div>
+        <div class="container">
+            <section id="perfil">
+                <div>
+                    <div id="perfil-responsivo">
+                        <div id="perfil-top">
+                            <img src="images/perfil.svg.png" alt="Foto de perfil">
+                            <h4>Olá, Francisco Ferreira!</h4>
+                            <span>franciscoferreira@gmail.com</span>
+                        </div>
+                        <div id="perfil-center">
+                            <span><img src="images/cartao.svg.png" alt="Minha carteira">Minha carteira</span>
+                            <span><img src="images/localizacao.svg.png" alt="Endereços">Endereços</span>
+                            <span><img src="images/configuracoes.svg.png" alt="Configurações">Configurações</span>
+                            <span><img src="images/icon_carta.svg.png" alt="Minhas mensagens">Minhas mensagens</span>
+                            <span><img src="images/servico-de-registros.png" alt="Serviços de registro">Serviço de registros</span>
+                            <span><img src="images/icon_central_atendimento.svg.png" alt="Central de ajuda">Central de ajuda</span>
+                        </div>   
+                    </div>
+                    <div id="perfil-bottom">
+                        <span>Sair</span>
+                        <span>Gerenciar Conta</span>
+                    </div>
+                </div>
+             </section>
+             <div id="container-2">
+                <section id="gerenciamento-roteiros">
+                    <span class="ver-mais">Ver tudo<img src="images/seta-direita.png" alt=""></span>
+                    <h3>Gerenciamento de Roteiros</h3>
+                    <div id="row-2">
+                        <li>
+                            <img src="images/participantes.png" alt="Participantes">
+                            <span>Participantes</span>
+                        </li>
+                        <li>
+                            <img src="images/faturamento.png" alt="Faturamento">
+                            <span>Faturamento</span>
+                        </li>
+                        <li>
+                            <img src="images/comentar.png" alt="Avaliações">
+                            <span>Avaliações</span>
+                        </li>
+                        <li>
+                            <img src="images/excluir-roteiro.png" alt="Exclusão do Roteiro">
+                            <span>Excluir Roteiro</span>
+                        </li>
+                    </div>
+                <section>
+                    <div id="itens">
+                        <h5 class="titulo">Última Edição: 20 de Fevereiro de 2024 - 15:12</h5>
+                        <div class="wrapper">
+                            <div class="img-wrapper">
+                                <img src="images/lençois-maranhences.png" alt="Lençois Maranhenses">
+                            </div>
+                            <div class="text-wrapper">
+                                <h5>Lençóis Maranhenses</h5>
+                                <span><img src="images/calendario.png" alt="Calendário">Data de Início: 02/03/2024</span>
+                                <span><img src="images/duracao.png" alt="Duração">Duração: 6 Dias e 5 Noites</span>
+                                <span><img src="images/horario.png" alt="Horário de Saída">Horário de Saída: 04:00 AM</span>
+                                <span><img src="images/valor.png" alt="Valor do Roteiro">Valor: R$ 600,00</span>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button id="button-visualizar"><h4>Visualizar</h4></button>
+                            <button id="button-editar"><h4>Editar</h4></button>
+                        </div>
+                    </div>                    
+                </section>
+                </section>
+                <a id="button-responsivo" href="../cadastro_roteiro/cadastro_roteiro.html">
+                    <button id="button-adicionar_roteiro"><img src="images/sinal-de-mais.png"><h3>Adicionar Roteiro</h3></button>
+                </a>
+                <section>
+                <div class="container-3">
+                <div id="roteiros-catalogados">
+                    <h3>Roteiros Catalogados</h3>
+                    <div>
+                        <img src="images/cachoeira-veu-de-noiva-dois.png" alt="Cacheira véu de noiva dois">
+                        <ol>
+                            <h4>Cachoeira Véu de Noiva II</h4>
+                            <li>Data de inserção: 12/02/2024</li>
+                            <li>Venda de Ingressos: Disponível</li>
+                            <li>Valor Unitário: R$600,00</li>
+                            <li>Ingressos vendidos: 84/100</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <img src="images/trancoso.png" alt="Trancoso">
+                        <ol>
+                            <h4>Trancoso</h4>
+                            <li>Data de inserção: 18/01/2024</li>
+                            <li>Estoque: Indisponível</li>
+                            <li>Valor unitário: R$580,00</li>
+                            <li>Ingressos vendidos: 100/100</li>
+                        </ol>
+                    </span>
+                </div>
+                <span class="ver-mais">Ver mais ></span>
+                </div>
+            </section>
+             
+                 
+    </main>
+
+    <footer>
+        <div>ENTRE EM CONTATO PARA MAIS INFORMAÇÕES</div>
+        <section>
+            <div class="left margin_top">
+                <div>
+                    <div>Rua das Colhetas, 258-A, Apipucos</div>
+                    <div>Recife, PE - Brasil</div>
+                    <div>CEP: 10254-330</div>
+                    <div class="margin_top">NÓS NA TRILHA PASSEIOS LTDA</div>
+                    <div>08.591.212/0004-07</div>
+                </div>
+            </div>
+            <div class="right margin_top">
+                <div>Encontre-nos nas redes sociais</div>
+                <div>
+                    <img src="../../components/images/facebook.svg">
+                    <img src="../../components/images/instagram.svg">
+                    <img src="../../components/images/whatsapp.svg">
+                </div>
+                <div>
+                    <img src="../../components/images/pinterest.svg">
+                    <img src="../../components/images/twitter.svg">
+                    <img src="../../components/images/youtube.svg">
+                </div>
+                <div>contato@nosnatrilha.com.br</div>
+            </div>
+        </section>
+    </footer>
+
+</body>    
+</html>
