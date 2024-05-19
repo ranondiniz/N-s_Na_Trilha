@@ -17,7 +17,6 @@ function buscarERenderizarRoteiros() {
                 card.id = 'card_' + roteiro.id;
 
                 card.innerHTML = `
-                <img src="images/roteiro_1.png" alt="Imagem do roteiro.">
                 <p>${roteiro.nome}</p>
                 <span class="bold">${roteiro.descricao}</span>
                 <div>
