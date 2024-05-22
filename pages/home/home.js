@@ -16,6 +16,10 @@ function buscarERenderizarRoteiros() {
                 card.classList.add('card_roteiro');
                 card.id = 'card_' + roteiro.id;
 
+                const dataInicio = new Date(roteiro.dataInicio);
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                const dataFormatada = dataInicio.toLocaleDateString('pt-BR', options);
+
                 card.innerHTML = `
                 <p>${roteiro.nome}</p>
                 <span class="bold">${roteiro.descricao}</span>
@@ -28,7 +32,7 @@ function buscarERenderizarRoteiros() {
                     <div class="info_card">
                         <img class="icons_card" src="images/duracao.svg" alt="">
                         <span class="bold">Horáio saída:</span>
-                        <span>${roteiro.dataInicio} às ${roteiro.horarioSaida}h</span>
+                        <span>${dataFormatada} às ${roteiro.horarioSaida}h</span>
                     </div>
                     <div class="info_card">
                         <span class="bold">Categoria:</span>
