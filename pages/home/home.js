@@ -39,6 +39,11 @@ function buscarERenderizarRoteiros() {
                         <span>R$${roteiro.preco}</span>
                     </div>
                 </div>`;
+
+                card.addEventListener('click', () => {
+                    const roteiroId = roteiro.id;
+                    window.location.href = '../roteiro_selecionado/roteiro_selecionado.html?id=' + roteiroId;
+                });
             
             container.appendChild(card);
         });
@@ -49,4 +54,3 @@ function buscarERenderizarRoteiros() {
 }
 
 window.onload = buscarERenderizarRoteiros;
-
