@@ -42,6 +42,63 @@
                 <img src="../../components/images/carrinho.svg" alt="Carrinho de Compras" id="img_cart">
             </div>
         </nav>
+        <section id="desktop">
+            <nav class="nav_header">
+                <span id="central_colab" class="nav_item">Central de Colaboradores</span>
+                <a href="../cadastro_parceiros/cadastro_parceiros.html"><span>Parcerias</span></a>
+                <div class="div_busca">
+                    <input type="text" id="txt_busca">
+                    <img src="images/lupa_search.svg" class="btn_busca" alt="Buscar">
+                </div>
+                <span id="login" class="nav_item">Login</span>
+                <a href="../cadastro_cliente/cadastro_cliente.html"><span>Cadastre-se</span></a>
+            </nav>
+            <nav class="nav_header_2">
+                <div>
+                    <img src="../../components/images/logo_principal.svg" alt="Logo da Nós na Trilha" class="logo_principal">
+                </div>
+                <div class="opcoes_nav">
+                    <li><a href="../home/home.html">HOME</a></li>
+                    <li><a href="../catalogos/catalogos.html">ROTEIROS</a></li></li>
+                    <li><a href="../feed_interesses/feed_interesses.html">FEED</a></li>
+                    <li><a href="../nossa_historia/nossaHistoria.html">NOSSA HISTÓRIA</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
+                </div>
+                <div class="icons_nav">
+                    <img src="../../components/images/perfil.svg" alt="Perfil" id="img_perfil">
+                    <img src="../../components/images/notificacoes.svg" alt="Notificações" id="img_sino">
+                    <img src="../../components/images/carrinho.svg" alt="Carrinho de Compras" id="img_cart">
+                </div>
+            </nav>
+        </section>
+        <section id="mobile">
+            <img src="../../components/images/logo_principal.svg" alt="Logo da Nós na Trilha" class="logo_principal">
+            <div class="div_busca">
+                <input type="text" id="txt_busca">
+                <img src="images/lupa_search.svg" class="btn_busca" alt="Buscar">
+            </div>
+            <nav id="nav_mobile">
+                <buttton id="btn-mobile" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hambuguer"></span>
+                </buttton>
+                <section id="menu" role="menu">
+                    <li>ROTEIROS</li>
+                    <li>FEED</li>
+                    <li>NOSSA HISTÓRIA</li>
+                    <li>CONTATO</li>
+                    <li>CADASTRE-SE</li>
+                    <div id="colab_mobile">
+                        <li>PARCERIAS</li>
+                        <li>CENTRAL DE COLABORADORES</li>
+                    </div>
+                    <div id="icons_nav_mobile">
+                        <img src="../../components/images/perfil.svg" alt="Perfil" id="img_perfil">
+                        <img src="../../components/images/notificacoes.svg" alt="Notificações" id="img_sino">
+                        <img src="../../components/images/carrinho.svg" alt="Carrinho de Compras" id="img_cart">
+                    </div>
+                </section>
+            </nav>
+        </section>
     </header>
     <main>
         <section id="titulo_roteiros">
@@ -100,7 +157,7 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer id="contato">
         <div>ENTRE EM CONTATO PARA MAIS INFORMAÇÕES</div>
         <section>
             <div class="left margin_top">
