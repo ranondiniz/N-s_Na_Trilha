@@ -46,30 +46,27 @@
     <main>
         <br>
         <div class="info-breadcrumbs">
-            <span class="breadcrumbs">Home | Catálogo |<span> Ponto Turístico Selecionado</span></span>
+            <span class="breadcrumbs">Home | <span>Roteiro Selecionado</span></span>
         </div>        
         
         <section class="principal">
             <div class="bloco-1">
                 <div class="principal-box">
-                    <img src="images/farol_da_barra.png">
+                    <!-- <img src="images/farol_da_barra.png"> -->
 
                     <div class="box texto">
                         <br>
-                        <h3>Farol da Barra - Salvador</h3>
-                        <p id="descricao">
-                            Uma viagem pelo Farol da Barra, Pelourinho, Mercado Modelo e praias da região em Salvador, Bahia, é uma jornada pela rica história, cultura e beleza natural da região. Do icônico Farol da Barra ao colorido Pelourinho, do animado Mercado Modelo às deslumbrantes praias tropicais, cada parada oferece uma experiência única e envolvente, mergulhando os viajantes nas vibrantes tradições e paisagens deslumbrantes da Bahia.
-                        </p>
-                        <h4>R$ 800,00</h4>
-                        <p id="parcelamento">8x de R$ 100,00 sem juros</p>
+                        <h3 id="nome"></h3>
+                        <p id="descricao"></p>
+                        <h4 id="preco"></h4>
                         <hr>
-                        <button class="buttom cima" style="background-color: #3E4533;">ADICIONAR AO CARRINHO</button><br>
-                        <button class="buttom cima" style="background-color: #3E4533;">ADICIONAR AOS FAVORITOS</button>
-                        <button class="buttom cima" style="background-color: #3E4533;">COMPRAR AGORA</button>
+                        <!-- <button class="buttom cima" style="background-color: #3E4533;">ADICIONAR AO CARRINHO</button><br> -->
+                        <!-- <button class="buttom cima" style="background-color: #3E4533;">ADICIONAR AOS FAVORITOS</button> -->
+                        <!-- <button class="buttom cima" style="background-color: #3E4533;">COMPRAR AGORA</button> -->
                     </div>
                 </div>
 
-                <div class="box pontos-parecidos">
+                <!-- <div class="box pontos-parecidos">
                     <h3 id="titulo">Pontos Turísticos Parecidos</h3>
                     <div class="card">
                         <div class="box-card">
@@ -95,7 +92,7 @@
                         </div>
 
                     </div>
-                </div>
+                </div> -->
             </div>
 
 
@@ -105,29 +102,16 @@
                     <h3>Mais Informações</h3>
                     <div class="box-info">
                         <ul>
-                            <strong><li>Datas:</li>
-                            <li>Duração:</li>
-                            <li>Horário de Saída:</li>
-                            <li>Quantidade de Vagas:</li>
-                            <li>Alojamento:</li>
-                            <li>Transporte:</li>
-                            <li>Atrações e Atividades:</li>
-                            <li>Requisitos de Viagem e Documentação:</li></strong>
-                        </ul>
-    
-                        <ul>
-                            <li>10 a 15 de março</li>
-                            <li>5 dias</li>
-                            <li>04:00 AM</li>
-                            <li>40 vagas</li>
-                            <li>Hotel Ondina</li>
-                            <li>Ônibus</li>
-                            <li>Farol da Barra, Pelourinho, Mercado Modelo e praias da região</li>
-                            <li>Documento de identificação válido, como RG ou passaporte</li>
+                            <li id="horarioSaida">Data de Saída:</li>
+                            <li id="qtdVagas">Quantidade de Vagas:</li>
+                            <li id="alojamento">Alojamento:</li>
+                            <li id="transporte">Transporte:</li>
+                            <li id="atracoesAtv">Atrações e Atividades:</li>
+                            <li id="requisitos">Requisitos de Viagem e Documentação:</li></strong>
                         </ul>
                     </div>
                 </div>
-                <div class="comentarios">
+                <!-- <div class="comentarios">
                     <h3>Avaliações</h3>
                     <div id="av-geral">
                         <img src="images/avaliacao.png">
@@ -154,7 +138,7 @@
                     </div>
                     
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <!--INICIO MODAL PARA TODAS AS TELAS-->
@@ -246,5 +230,6 @@
         </section>
     </footer>
     <script type="text/javascript" src="../../components/script.js"></script>
+    <script src="roteiro_selecionado.js"></script>
 </body>
 </html>

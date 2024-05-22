@@ -15,18 +15,19 @@
 
 .principal {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 0 auto;
     color: #0F270F;
     margin-top: 2em;
-    gap: 1.5em;
+    margin-bottom: 1em;
 }
 
 .bloco-2 {
     display:flex;
     flex-direction: column;
-    width: 35%;
+    width: 60%;
 }
 
 .principal-box {
