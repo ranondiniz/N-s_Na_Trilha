@@ -16,18 +16,19 @@ window.onload = function() {
                 document.getElementById('nome').textContent = roteiro.nome;
                 document.getElementById('descricao').textContent = roteiro.descricao;
                 document.getElementById('preco').textContent = 'R$ ' + roteiro.preco.toFixed(2);
-                document.getElementById('qtdVagas').textContent = 'Quantidade de Vagas: ' + roteiro.qtdVagas;
+                document.getElementById('qtdVagas').textContent = roteiro.qtdVagas + ' vagas';
                 document.getElementById('alojamento').textContent = 'Alojamento: ' + roteiro.alojamento;
                 document.getElementById('transporte').textContent = 'Transporte: ' + roteiro.transporte;
                 document.getElementById('atracoesAtv').textContent = 'Atrações e Atividades: ' + roteiro.atracoesAtv;
                 document.getElementById('requisitos').textContent = 'Requisitos de Viagem e Documentação: ' + roteiro.requisitos;
+                document.getElementById('numeroContato').textContent = 'Número para contato: ' + roteiro.numeroContato;
 
                 console.log(roteiro)
 
                 const dataInicio = new Date(roteiro.dataInicio);
                 const options = { year: 'numeric', month: 'long', day: 'numeric' };
                 const dataFormatada = dataInicio.toLocaleDateString('pt-BR', options);
-                document.getElementById('horarioSaida').textContent =  dataFormatada + ' às ' + roteiro.horarioSaida + 'h';
+                document.getElementById('horarioSaida').textContent =  'Data de saída: ' + dataFormatada + ' às ' + roteiro.horarioSaida + 'h';
             })
             .catch(error => {
                 console.error('Erro ao buscar o roteiro:', error);

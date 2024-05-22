@@ -20,6 +20,7 @@ form.addEventListener('submit', function(event) {
         alojamento: document.getElementById('alojamento').value, 
         descricao: document.getElementById('descricao').value, 
         requisitos: document.getElementById('requisitos').value, 
+        numeroContato: document.getElementById('numeroContato').value, 
     }
 
     console.log(formData)

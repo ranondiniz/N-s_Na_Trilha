@@ -64,14 +64,14 @@
                         <option value="Sítio Arqueológico">Sítio Arqueológico</option>
                     </select>
 
-                    <label for="estado">Selecione um estado:</label>
+                    <label for="estado">Selecione o estado:</label>
                       <select id="estado" class="estado">
-                        <option value="" disabled selected>Selecione um estado</option>
+                        <option value="" disabled selected>Selecione o estado</option>
                       </select>
 
-                      <label for="cidade">Selecione uma cidade:</label>
+                      <label for="cidade">Selecione a cidade de saída:</label>
                       <select id="cidade" class="cidade">
-                        <option value="" disabled selected>Selecione uma cidade</option>
+                        <option value="" disabled selected>Selecione a cidade de saída</option>
                       </select>
 
                     <label for="preco">Preço unitário:</label>
@@ -80,7 +80,7 @@
                     <label for="vagas">Quantidade de vagas:</label>
                     <input type="number" id="vagas" name="vagas" required>
 
-                    <label for="dataInicio">Data de início:</label>
+                    <label for="dataInicio">Data de saída:</label>
                     <input type="date" id="dataInicio" name="dataInicio" required>
 
                     <label for="horarioSaida">Horário de saída:</label>
@@ -88,9 +88,12 @@
                     
                     <label for="transporte">Transporte:</label>
                     <input type="text" id="transporte" name="transporte" required>
+                    
+                    <label for="descrição">Número para contato:</label>
+                    <input id="numeroContato" name="descricao" rows="5" required></input>
 
                     <br>
-                    <label for="requisitos">Requisitos de Viagem e Documentação:</label>
+                    <label for="requisitos">Requisitos e Documentação:</label>
                     <textarea id="requisitos" name="requisitos" rows="5" required></textarea>
 
                     <label for="atracoes">Atrações e Atividades:</label>
@@ -102,6 +105,7 @@
                     <br>
                     <label for="descrição">Descrição:</label>
                     <textarea id="descricao" name="descricao" rows="5" required></textarea>
+
 
                     <div id="mensagem_retorno"></div>
                     <br>
