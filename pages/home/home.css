@@ -143,7 +143,7 @@
     }
 }
 
-.grid_2_columns {
+.info_contato {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -215,4 +215,31 @@
         align-items: center;
         cursor: pointer;
     }
+}
+
+@media (max-width: 1000px) { 
+    #container_cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 1000px) { 
+    #container_cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info_contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box_newsletter {
+        margin: 0;
+    }
+
 }
