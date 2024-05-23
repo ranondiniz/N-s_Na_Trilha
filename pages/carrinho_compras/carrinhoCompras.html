@@ -41,56 +41,73 @@
         </nav>
       </header>
     <main>
-    	<section class="box-principal">
-    		<div class="info-breadcrumbs">
-                <span class="breadcrumbs">Home |<span> Carrinho de Compras</span></span>
-                <h1>CARRINHO DE COMPRAS</h1>
+    	<h1>Carrinho de Compras</h1>
+
+    <section class="itens-carrinho">
+        <h2>ROTEIROS SELECIONADOS:</h2>
+
+        <div class="item-carrinho">
+            <div class="informacoes-item">
+                <h3>CACHOEIRA VÉU DE NOIVA II - PE</h3>
+                <p>Código: ADERL088</p>
             </div>
-            
-    		<div class="box-produtos-carrinho">
-    			<h3>TRILHAS SELECIONADAS:</h3>
-    			<div class="box-colunas">
-    				<div class="box-img">
-    					<img src="">
-    				</div>
-    				<div class="box-descricao linha">
-                        <h3>Farol da Barra - Salvador</h3>
-                        <span>Código: </span>
-                        <span>Disponível</span>
-                    </div>
-                    <div class="box-descricao centro">
-                        <h3>PREÇO UNITÁRIO</h3>
-                        <span>R$ 800,00</span>
-                    </div>
-    			<div class="box-inputs">
-    				<div class="teste">
-    						<div class="box-frete">
-    							<span>CALCULAR FRETE</span>
-	    					<div class="input">
-	    						<p>CEP</p>
-	    						<input type="text" class="txt" name="">
-	    					</div>
-	    				</div>
-	    				<div class="box-frete">
-	    					<span>CUPOM DE DESCONTO</span>
-	    					<div class="input maior">
-	    						<p>USAR CUPOM</p>
-	    						<input type="text" class="txt" name="">
-	    					</div>
-	    				</div>
-    			</div>
-    			<div class="total">
-    				<div class="total-compra">
-    					<p>TOTAL</p>
-    					<button>R$ 800,00</button>
-    				</div>
-    				<div class="total-compra">
-    					<button id="botao">CONTINUAR COMPRA</button>
-    				</div>
-    			</div>
-    		</div>
+            <div class="acoes-item">
+                <p class="preco-unitario">R$ 150,00</p>
+                <div class="quantidade">
+                    <button class="diminuir">-</button>
+                    <input type="number" value="2" min="1">
+                    <button class="aumentar">+</button>
+                </div>
+                <p class="subtotal">R$ 500,00</p>
+                <button class="excluir">Excluir</button>
+            </div>
         </div>
-    	</section>
+
+        <div class="item-carrinho">
+            <div class="informacoes-item">
+                <h3>POUSADA CAMINHO DAS CACHOEIRAS</h3>
+                <p>Código: ADERL088</p>
+            </div>
+            <div class="acoes-item">
+                <p class="preco-unitario">R$ 250,00</p>
+                <div class="quantidade">
+                    <button class="diminuir">-</button>
+                    <input type="number" value="2" min="1">
+                    <button class="aumentar">+</button>
+                </div>
+                <p class="subtotal">R$ 500,00</p>
+                <button class="excluir">Excluir</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="resumo-compra">
+        <div class="linha-resumo">
+            <label for="quantidade-pessoas">Quantidade de Pessoas:</label>
+            <input type="number" id="quantidade-pessoas" value="2" min="1">
+        </div>
+
+        <div class="linha-resumo">
+            <label for="quantidade-dias">Quantidade de Dias:</label>
+            <div class="quantidade">
+                <button class="diminuir">-</button>
+                <input type="number" id="quantidade-dias" value="2" min="1">
+                <button class="aumentar">+</button>
+            </div>
+        </div>
+
+        <p class="total">TOTAL: R$ 1.000,00</p>
+
+        <button class="continuar-compra">CONTINUAR COMPRA</button>
+        <button class="finalizar-compra">FINALIZAR COMPRA</button>
+    </section>
+
+    <section class="informacoes-compra">
+        <div class="linha-informacao">
+            <label for="data-escolha">Data de Escolha:</label>
+            <input type="date" id="data-escolha" value="2024-01-27">
+        </div>
+    </section>
     </main>
     <footer>
         <div>ENTRE EM CONTATO PARA MAIS INFORMAÇÕES</div>
