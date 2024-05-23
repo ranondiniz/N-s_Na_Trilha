@@ -1,1 +1,39 @@
-editar logo
+body {
+   font-family: sans-serif;
+}
+
+.itens-carrinho {
+   margin-bottom: 20px;
+}
+
+.item-carrinho {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   padding: 10px;
+}
+
+.informacoes-item {
+   flex: 1;
+}
+
+.acoes-item {
+   display: flex;
+   align-items: center;
+}
+
+.preco-unitario {
+   margin-right: 20px;
+}
+
+.quantidade {
+   display: flex;
+   align-items: center;
+}
+
+.quantidade input[type="number"] {
+   width: 50px;
+   text-align: center
+}
